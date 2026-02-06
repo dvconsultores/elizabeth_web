@@ -1,0 +1,8 @@
+{
+  "name": "Montessori Elizabeth",
+  "description": "Official website of Montessori Elizabeth educational institution, designed to convey trust, order, and pedagogical warmth.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

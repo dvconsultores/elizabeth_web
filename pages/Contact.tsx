@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
 
         {/* Map Placeholder */}
         <div className="mt-24 aspect-[21/9] bg-slate-200 rounded-3xl overflow-hidden relative shadow-inner">
-          <img src="https://picsum.photos/id/100/1200/600" alt="Map" className="w-full h-full object-cover opacity-50 grayscale" />
+          <img src="/src/img/16.png" alt="Map" className="w-full h-full object-cover opacity-50 grayscale" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="bg-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-2">
               <MapPin className="text-red-500" />

@@ -13,10 +13,10 @@ const Community: React.FC = () => {
 
         {/* Gallery / Life at school */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
-          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400&h=600" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" />
-          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=400&h=400" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" />
-          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=400&h=600" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" />
-          <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&q=80&w=400&h=400" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" />
+          <img src="/src/img/11.png" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" />
+          <img src="/src/img/12.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" />
+          <img src="/src/img/13.png" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" />
+          <img src="/src/img/14.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center mb-32">
@@ -35,7 +35,7 @@ const Community: React.FC = () => {
             </div>
           </div>
           <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
-            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="Active community life" className="w-full h-full object-cover" />
+            <img src="/src/img/15.png" alt="Active community life" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

@@ -49,28 +49,15 @@ const About: React.FC = () => {
               </div>
               
               <div className="p-8 sm:p-12 space-y-6">
-                <div className="inline-flex items-center gap-2 bg-amber-50 text-amber-700 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider mb-4">
-                  <Award size={16} />
-                  MSCR Quality Rated
-                </div>
-                
-                <p className="text-lg font-serif text-slate-700 font-semibold leading-relaxed">
-                  MSCR is a Colorado Shines Quality Rated State Licensed Childcare Facility.
-                </p>
-
-                <h3 className="text-xl font-serif text-sage font-bold pt-4">Why choose our Montessori-Inspired School?</h3>
+                <h3 className="text-xl font-serif text-sage font-bold">Why choose our Montessori-Inspired School?</h3>
                 
                 <p className="text-slate-600 leading-relaxed">
                   From birth to age 5 are the most important years in a child's life. These years are often called the formative years because children develop and learn more during this time than during any other period of their lives. We understand that choosing the right early childhood education experience for your child is one of the most important decisions parents ever make.
                 </p>
 
                 <p className="text-slate-600 leading-relaxed">
-                  At <strong>Montessori School of Elizabeth</strong>, we are dedicated to the development of the whole child; academically, emotionally, physically, and spiritually. We provide children with a Montessori-Inspired education. Our focus is on instilling leadership, responsibility, self-discipline, confidence, individuality, and a love of learning. 
+                  At Montessori School of Elizabeth, we are dedicated to the development of the whole child; academically, emotionally, physically, and spiritually. We provide children with a Montessori-Inspired education. Our focus is on instilling leadership, responsibility, self-discipline, confidence, individuality, and a love of learning. Our activities provide strong academics, social skills, and emotional/intellectual growth. We believe each student at Montessori School of Elizabeth is unique and has the potential to unveil their inner strength. Students also develop an understanding of themselves, their surroundings, and their world.
                 </p>
-
-                <div className="bg-soft-cream p-6 rounded-2xl border border-sage/10 italic text-slate-600">
-                  "Our activities provide strong academics, social skills, and emotional/intellectual growth. We believe each student at Montessori School of Elizabeth is unique and has the potential to unveil their inner strength. Students also develop an understanding of themselves, their surroundings, and their world."
-                </div>
 
                 <p className="text-slate-600 leading-relaxed">
                   An education at Montessori School of Elizabeth will allow a student to develop socially and intellectually in all areas of life. We believe that the child's needs and development come first. We strive every day to find new and exciting ways to encourage learning. We create a stimulating environment with meaningful experiences so that your child can achieve his or her true potential.
@@ -93,7 +80,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-center">
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
-              <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=1000" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
+              <img src="/src/img/6.png" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="space-y-12">
@@ -103,15 +90,35 @@ const About: React.FC = () => {
                 Founded over 15 years ago, Montessori Elizabeth was born with the firm purpose of offering a cutting-edge educational alternative in Caracas. What began as a dedicated "nido" has evolved into a comprehensive Montessori center, known for its warm atmosphere and pedagogical rigor.
               </p>
             </section>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8">
               <div className="border-l-2 border-sage pl-6">
                 <h3 className="font-serif text-xl mb-4">Mission</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">To guide the child's natural self-formation through a prepared environment that nurtures independence and lifelong curiosity.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">To nurture the whole child through a Montessori-inspired education that fosters independence, confidence, responsibility, and a lifelong love of learning during the most formative years of life.</p>
               </div>
               <div className="border-l-2 border-amber-200 pl-6">
                 <h3 className="font-serif text-xl mb-4">Vision</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">To lead as a model Montessori community where every child graduates with critical thinking skills and inner peace.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">To be a leading early childhood learning community where each child develops their full academic, emotional, social, and spiritual potential in a respectful, prepared, and child-centered environment.</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* What is Montessori */}
+        <div className="mb-32">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-800 text-center">What is Montessori?</h2>
+            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+              <p>
+                Montessori education is based on the astute observations and scientific studies of Maria Montessori. Maria was the first woman to receive a medical degree in Italy toward the end of the 19th century. Much of her terminology and approach is now well-respected and used in most early childhood educational programs, including: hands on learning, manipulation of materials, child-centered environment, etc. Her philosophical approach was one of deep respect for the spirit of the child, nurturing, and unfolding of the individual personality.
+              </p>
+              
+              <p>
+                When you enter the "prepared environment" of a Montessori classroom you will encounter an array of fascinating and seemingly mysterious materials that are neatly arranged on low shelves for the children's easy access. If you observe a classroom in session you will see joyful children engaged in productive and cooperative work. The teacher will be unobtrusive, while giving a lesson on one of these materials. This usually occurs with only one child so the lesson can be designed around the interest and ability of that individual child.
+              </p>
+              
+              <p>
+                It is this combination of philosophy and materials that define a Montessori classroom or program. Montessori schools seem to attract parents, who believe as we do, that the first years of a child's life and education will shape and help develop the best possible future for each individual.
+              </p>
             </div>
           </div>
         </div>

@@ -6,24 +6,39 @@ const Programs: React.FC = () => {
   const programs = [
     {
       title: "Infant Community",
-      age: "18 months to 3 years",
-      objective: "Foster emotional security and the development of motor and language skills in a welcoming environment.",
-      benefits: ["Development of gait and coordination", "Acquisition of vocabulary", "First independence habits (eating, hygiene)"],
-      img: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800"
+      age: "Ages: 18 months to 3 years",
+      objective: "To foster emotional security and support the natural development of motor coordination and language within a warm, nurturing environment.",
+      benefits: [
+        "Development of balance, gait, and fine motor coordination",
+        "Expansion of expressive and receptive vocabulary",
+        "Formation of early independence habits (feeding, hygiene, self-care)",
+        "Growth of confidence through purposeful, guided activity"
+      ],
+      img: "/src/img/7.png"
     },
     {
-      title: "Children's House",
-      age: "3 to 6 years",
-      objective: "Develop concentration, order, and will through free work with sensorial and academic materials.",
-      benefits: ["Initiation to reading, writing, and math", "Sensorial education", "Practical Life exercises", "Cultural immersion"],
-      img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800"
+      title: "Children’s House",
+      age: "Ages: 3 to 6 years",
+      objective: "To cultivate concentration, order, independence, and inner discipline through self-directed work with sensorial and academic materials.",
+      benefits: [
+        "Foundations of reading, writing, and mathematics",
+        "Advanced sensorial development",
+        "Practical Life activities that build autonomy and responsibility",
+        "Cultural awareness and early global understanding"
+      ],
+      img: "/src/img/8.png"
     },
     {
       title: "Workshop (Elementary)",
-      age: "6 to 12 years",
-      objective: "Stimulate imagination and intellectual curiosity through Cosmic Education and collaborative work.",
-      benefits: ["Development of abstract reasoning", "Research projects", "Social and community responsibility", "Understanding of the universe"],
-      img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800"
+      age: "Ages: 6 to 12 years",
+      objective: "To stimulate imagination, critical thinking, and intellectual curiosity through Cosmic Education, inquiry-based learning, and collaborative work.",
+      benefits: [
+        "Development of abstract and logical reasoning",
+        "Research-based projects and problem-solving skills",
+        "Social awareness and community responsibility",
+        "A deeper understanding of the interconnectedness of the universe"
+      ],
+      img: "/src/img/9.png"
     }
   ];
 
@@ -33,7 +48,7 @@ const Programs: React.FC = () => {
         <div className="text-center mb-24">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Our Programs</span>
           <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Stages of Development</h1>
-          <p className="text-slate-500 max-w-2xl mx-auto text-lg">Every classroom is a unique "prepared environment" tailored to the specific needs of each development plane.</p>
+          <p className="text-slate-500 max-w-2xl mx-auto text-lg">Each classroom is a thoughtfully designed prepared environment, aligned with the specific needs of each developmental plane and guided by Montessori principles.</p>
         </div>
 
         <div className="space-y-32">

@@ -13,10 +13,10 @@ const Community: React.FC = () => {
 
         {/* Gallery / Life at school */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
-          <img src="/src/img/11.png" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" />
-          <img src="/src/img/12.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" />
-          <img src="/src/img/13.png" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" />
-          <img src="/src/img/14.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" />
+          <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/11.png" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" />
+          <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/12.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" />
+          <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/13.png" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" />
+          <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/14.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center mb-32">
@@ -35,7 +35,7 @@ const Community: React.FC = () => {
             </div>
           </div>
           <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
-            <img src="/src/img/15.png" alt="Active community life" className="w-full h-full object-cover" />
+            <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/15.png" alt="Active community life" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

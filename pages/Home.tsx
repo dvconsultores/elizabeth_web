@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/img/1.png" 
+            src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/1.png" 
             alt="Montessori Elizabeth Learning Environment" 
             className="w-full h-full object-cover brightness-[0.6]" 
           />
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
-              <img src="/src/img/2.png" alt="Authentic Montessori Materials" className="w-full h-full object-cover" />
+              <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/2.png" alt="Authentic Montessori Materials" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-sage/20 rounded-full blur-3xl -z-0"></div>
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-amber-100/30 rounded-full blur-3xl -z-0"></div>
@@ -91,9 +91,9 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Infant Community', age: '1.5 to 3 years', img: '/src/img/3.png', desc: 'Motor development, language, and initial socialization.' },
-              { title: "Children's House", age: '3 to 6 years', img: '/src/img/4.png', desc: 'Sensorial exploration, mathematics, practical life, and culture.' },
-              { title: 'Elementary', age: '6 to 12 years', img: '/src/img/5.png', desc: 'Cosmic education, abstract reasoning, and collaboration.' }
+              { title: 'Infant Community', age: '1.5 to 3 years', img: 'https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/3.png', desc: 'Motor development, language, and initial socialization.' },
+              { title: "Children's House", age: '3 to 6 years', img: 'https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/4.png', desc: 'Sensorial exploration, mathematics, practical life, and culture.' },
+              { title: 'Elementary', age: '6 to 12 years', img: 'https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/5.png', desc: 'Cosmic education, abstract reasoning, and collaboration.' }
             ].map((program, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl mb-6 relative">

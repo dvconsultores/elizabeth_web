@@ -14,7 +14,7 @@ const Programs: React.FC = () => {
         "Formation of early independence habits (feeding, hygiene, self-care)",
         "Growth of confidence through purposeful, guided activity"
       ],
-      img: "/src/img/7.png"
+      img: "https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/7.png"
     },
     {
       title: "Children’s House",
@@ -26,7 +26,7 @@ const Programs: React.FC = () => {
         "Practical Life activities that build autonomy and responsibility",
         "Cultural awareness and early global understanding"
       ],
-      img: "/src/img/8.png"
+      img: "https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/8.png"
     },
     {
       title: "Workshop (Elementary)",
@@ -38,7 +38,7 @@ const Programs: React.FC = () => {
         "Social awareness and community responsibility",
         "A deeper understanding of the interconnectedness of the universe"
       ],
-      img: "/src/img/9.png"
+      img: "https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/9.png"
     }
   ];
 

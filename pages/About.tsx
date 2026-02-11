@@ -80,7 +80,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-center">
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
-              <img src="/src/img/6.png" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
+              <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/6.png" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="space-y-12">

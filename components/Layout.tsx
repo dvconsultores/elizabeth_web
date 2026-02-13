@@ -25,13 +25,16 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-3' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'md:bg-transparent bg-white/95 backdrop-blur-sm md:shadow-none shadow-sm py-4 md:py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex flex-col">
-          <span className={`text-2xl font-serif font-semibold tracking-tight ${scrolled ? 'text-sage' : 'text-slate-800'}`}>
-            MONTESSORI ELIZABETH
-          </span>
-          <span className="text-[10px] uppercase tracking-[0.2em] font-medium opacity-70">Educational Excellence</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/MSE-T.png" alt="MSE Logo" className="h-16 w-auto" />
+          <div className="flex flex-col">
+            <span className={`text-2xl font-serif tracking-tight ${scrolled || isOpen ? 'text-sage font-semibold' : 'md:text-slate-900 md:font-bold text-sage font-semibold'}`}>
+              MONTESSORI ELIZABETH
+            </span>
+            <span className={`text-[10px] uppercase tracking-[0.2em] ${scrolled || isOpen ? 'font-medium opacity-70' : 'md:font-semibold md:text-slate-800 font-medium text-sage/80'}`}>Educational Excellence</span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -40,8 +43,12 @@ export const Navbar: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-medium transition-colors hover:text-sage ${
-                location.pathname === item.path ? 'text-sage' : 'text-slate-600'
+              className={`text-sm transition-colors hover:text-sage ${
+                location.pathname === item.path 
+                  ? 'text-sage font-bold' 
+                  : scrolled 
+                    ? 'text-slate-600 font-medium' 
+                    : 'text-slate-900 font-semibold'
               }`}
             >
               {item.label}
@@ -56,8 +63,8 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X /> : <Menu />}
+        <button className="md:hidden text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 

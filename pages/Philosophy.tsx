@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Check } from 'lucide-react';
 
 const Philosophy: React.FC = () => {
   return (
@@ -9,60 +10,126 @@ const Philosophy: React.FC = () => {
           <div className="order-2 lg:order-1">
             <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Philosophy</span>
             <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-8 leading-tight">
-              The Scientific Path to Peaceful Human Development
+              The Montessori-Inspired Experience
             </h1>
-            <p className="text-slate-600 leading-relaxed text-lg mb-8">
-              Inspired by the scientific work and humanist vision of Maria Montessori, Elizabeth Montessori is grounded in the understanding that children possess an absorbent mind and an innate drive to learn. Our philosophy honors this natural intelligence by offering the right conditions, challenges, and guidance at each stage of development, aligned with our mission to nurture independent, confident, and responsible individuals.
+            <p className="text-slate-600 leading-relaxed text-lg mb-6">
+              At Montessori School of Elizabeth, Montessori-Inspired education is both philosophy and practice — thoughtfully implemented within a culture of excellence, structure, and intentional partnership.
+            </p>
+            <p className="text-slate-800 font-serif text-xl mb-6">
+              We are not simply a preschool.<br />
+              We are a foundational learning community.
+            </p>
+            <p className="text-slate-600 leading-relaxed text-lg">
+              Rooted in the principles of Dr. Maria Montessori, our approach recognizes each child as capable, curious, and deserving of an environment designed to cultivate independence, character, and intellectual depth from the earliest years.
             </p>
           </div>
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-full overflow-hidden border-8 border-soft-cream shadow-2xl">
-              <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/10.png" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" />
+              <img src="/10.png" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">The Prepared Environment</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">A carefully structured space that allows the child to act independently, make purposeful choices, and develop order, concentration, and self-discipline without constant adult intervention.</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">The Montessori Guide</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">The adult serves as an observer and guide rather than a traditional instructor, responding to the child’s developmental readiness and connecting them with materials that meet their current cognitive, emotional, and social needs.</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">Didactic Materials</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Scientifically designed materials with a clear educational purpose and built-in control of error, enabling the child to learn through exploration, repetition, and self-correction.</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">Freedom Within Limits</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Children are free to choose their work and progress at their own pace within clear, consistent boundaries that protect respect, responsibility, and community harmony.</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">Mixed-Age Communities</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Classrooms are composed of multiple age groups, encouraging collaboration, peer learning, leadership, empathy, and a social structure that reflects real life.</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h3 className="text-2xl font-serif mb-4 text-slate-800">Cosmic Education</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Children are guided to understand the interconnectedness of life, humanity, and the universe, fostering curiosity, gratitude, ethical awareness, and responsibility toward others and the environment.</p>
+        {/* A Distinctive Approach */}
+        <div className="mb-32">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-800">A Distinctive Approach to Early Education</h2>
+            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+              <p>
+                Unlike traditional childcare models centered primarily on supervision and routine, our classrooms are environments of purposeful engagement.
+              </p>
+              <p className="text-slate-800 font-serif text-xl">
+                Children are guided — not managed.
+              </p>
+              <p>
+                Within carefully prepared spaces, students engage with hands-on materials that promote concentration, mastery, and intrinsic motivation. Educators serve as skilled observers and intentional guides, meeting each child at their developmental level and thoughtfully advancing their growth.
+              </p>
+              <p className="text-slate-800 font-medium">
+                Here, children learn how to think, not simply what to learn.
+              </p>
+            </div>
+            
+            <div className="mt-10 bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+              <h3 className="text-xl font-serif mb-6 text-slate-800">They develop:</h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <li className="flex items-start gap-3 text-slate-600">
+                  <Check size={20} className="text-sage mt-1 flex-shrink-0" />
+                  <span>Academic readiness grounded in mastery</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-600">
+                  <Check size={20} className="text-sage mt-1 flex-shrink-0" />
+                  <span>Emotional intelligence and self-regulation</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-600">
+                  <Check size={20} className="text-sage mt-1 flex-shrink-0" />
+                  <span>Leadership and personal responsibility</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-600">
+                  <Check size={20} className="text-sage mt-1 flex-shrink-0" />
+                  <span>Confidence built through independence</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div className="mt-4 p-8 bg-slate-50 rounded-2xl">
-          <p className="text-slate-700 leading-relaxed">This philosophy supports Elizabeth Montessori’s vision of educating the whole child and preparing individuals not only for academic success, but for meaningful participation in society and lifelong learning.</p>
+        {/* Freedom with Intention */}
+        <div className="mb-32 bg-soft-cream rounded-[3rem] p-12 md:p-20">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-800 text-center">Freedom with Intention. Structure with Purpose.</h2>
+            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+              <p className="text-center text-slate-800 font-serif text-xl">
+                True independence flourishes within thoughtful boundaries.
+              </p>
+              <p>
+                Our Montessori-Inspired model balances choice with clarity. Children experience meaningful autonomy within highly organized, safety-focused systems that provide consistency, predictability, and peace of mind.
+              </p>
+              <p>
+                Outdoor learning is seamlessly integrated into the academic day. It is not separate from instruction — it is an extension of it. Through nature, children strengthen resilience, observation, and a deeper understanding of their environment.
+              </p>
+              <p className="text-center font-medium text-slate-800 text-xl">
+                Every element of the day is intentional.
+              </p>
+            </div>
+          </div>
         </div>
 
+        {/* Whole-Child Development */}
+        <div className="mb-32">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-800">Whole-Child Development, Elevated</h2>
+            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+              <p>
+                We believe early education should nurture more than academic readiness. It should shape character.
+              </p>
+              <p>
+                Our commitment extends to the academic, emotional, social, and spiritual development of every child. Through respectful guidance, structured independence, and collaborative partnership with families, we lay intentional foundations that prepare students not only for kindergarten — but for leadership, confidence, and lifelong learning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Closing Statement */}
         <div className="mt-32 p-12 md:p-20 bg-sage rounded-[3rem] text-white text-center">
-          <p className="text-2xl md:text-4xl font-serif italic max-w-4xl mx-auto leading-relaxed">
-            "It is not that I am inventing a method of education, I have simply studied the child; I have taken what the child has given me and expressed it."
-          </p>
-          <p className="mt-8 uppercase tracking-[0.3em] text-sm opacity-80">— Maria Montessori</p>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-2xl md:text-3xl font-serif leading-relaxed">
+              This is education rooted in heritage.
+            </p>
+            <p className="text-2xl md:text-3xl font-serif leading-relaxed">
+              Guided by intention.
+            </p>
+            <p className="text-2xl md:text-3xl font-serif leading-relaxed">
+              Delivered with excellence.
+            </p>
+            <div className="pt-8 mt-8 border-t border-white/20">
+              <p className="text-xl font-serif italic">
+                Intentional foundations for little hearts.
+              </p>
+              <p className="text-xl font-serif italic">
+                Confident futures for big dreams.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

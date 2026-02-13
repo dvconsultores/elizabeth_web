@@ -9,9 +9,15 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Contact & Admissions</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-8">Let's talk about your child's future.</h1>
-            <p className="text-slate-500 text-lg mb-12 leading-relaxed">
-              We are delighted to welcome families looking for a conscious education. Complete the form and we will get in touch to schedule a guided tour.
+            <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-8">Intentional foundations begin with connection.</h1>
+            <p className="text-slate-600 text-lg mb-6 leading-relaxed">
+              Choosing the right early childhood experience is an important decision — and we would be honored to connect with you.
+            </p>
+            <p className="text-slate-600 text-lg mb-6 leading-relaxed">
+              At Montessori School of Elizabeth, we believe meaningful partnership begins with conversation. Whether you are exploring options, ready to schedule a tour, or simply have questions, our team is here to guide you.
+            </p>
+            <p className="text-slate-600 text-lg mb-12 leading-relaxed">
+              We look forward to learning about your child, your family, and how we can walk alongside you during these foundational years.
             </p>
 
             <div className="space-y-8">
@@ -21,7 +27,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-serif font-bold text-slate-800 text-xl">Location</h4>
-                  <p className="text-slate-500">Main Ave. Las Mercedes, Qta. Elizabeth. Caracas, Venezuela.</p>
+                  <p className="text-slate-500">635 Beverly Street, Elizabeth, Colorado 80107</p>
                 </div>
               </div>
               <div className="flex items-start gap-6">
@@ -71,9 +77,8 @@ const Contact: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Program of Interest</label>
                   <select className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none appearance-none">
-                    <option>Infant Community</option>
-                    <option>Children's House</option>
-                    <option>Elementary</option>
+                    <option>Toddler Program</option>
+                    <option>Primary Program</option>
                   </select>
                 </div>
               </div>
@@ -90,7 +95,7 @@ const Contact: React.FC = () => {
 
         {/* Map Placeholder */}
         <div className="mt-24 aspect-[21/9] bg-slate-200 rounded-3xl overflow-hidden relative shadow-inner">
-          <img src="https://gme9j4qsc4fggej5.public.blob.vercel-storage.com/16.png" alt="Map" className="w-full h-full object-cover opacity-50 grayscale" />
+          <img src="/16.png" alt="Map" className="w-full h-full object-cover opacity-50 grayscale" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="bg-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-2">
               <MapPin className="text-red-500" />

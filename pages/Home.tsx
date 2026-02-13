@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
-              <img src="/2.png" alt="Authentic Montessori Materials" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/2428119075.jpeg" alt="Authentic Montessori Materials" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-sage/20 rounded-full blur-3xl -z-0"></div>
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-amber-100/30 rounded-full blur-3xl -z-0"></div>
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Infant Community', age: '1.5 to 3 years', img: '/3.png', desc: 'Motor development, language, and initial socialization.' },
+              { title: 'Our Toddlers', age: '1.5 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
               { title: "Children's House", age: '3 to 6 years', img: '/4.png', desc: 'Sensorial exploration, mathematics, practical life, and culture.' },
               { title: 'Elementary', age: '6 to 12 years', img: '/5.png', desc: 'Cosmic education, abstract reasoning, and collaboration.' }
             ].map((program, idx) => (

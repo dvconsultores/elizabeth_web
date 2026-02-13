@@ -98,7 +98,7 @@ const Home: React.FC = () => {
               <div key={idx} className="group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl mb-6 relative">
                   <img src={program.img} alt={program.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-sage shadow-sm">
+                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-slate-800 shadow-md">
                     {program.age}
                   </div>
                 </div>

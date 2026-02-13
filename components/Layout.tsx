@@ -39,7 +39,9 @@ export const Navbar: React.FC = () => {
               to={item.path}
               className={`text-sm transition-colors hover:text-sage ${
                 location.pathname === item.path 
-                  ? 'text-sage font-bold' 
+                  ? scrolled 
+                    ? 'text-sage font-bold'
+                    : 'text-slate-900 font-bold'
                   : scrolled 
                     ? 'text-slate-600 font-medium' 
                     : 'text-slate-900 font-semibold'

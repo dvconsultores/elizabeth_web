@@ -210,7 +210,7 @@ const Career: React.FC = () => {
                 <span className="font-semibold">we would love to meet you.</span>
               </p>
               <a
-                href="mailto:admissions@montessorielizabeth.com?subject=Assistant Lead Teacher Application"
+                href="mailto:astrid@montessorielizabeth.com?subject=Assistant Lead Teacher Application"
                 className="inline-block bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
               >
                 ✨ Apply Today

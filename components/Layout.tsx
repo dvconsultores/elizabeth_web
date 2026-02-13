@@ -115,7 +115,7 @@ export const Footer: React.FC = () => {
           <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Contact</h4>
           <ul className="space-y-4 text-sm text-slate-400">
             <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
-            <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+58 212 555-0123</span></li>
+            <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+1 (303) 663-6942</span></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-sage" /> <span>admissions@montessorielizabeth.com</span></li>
           </ul>
         </div>

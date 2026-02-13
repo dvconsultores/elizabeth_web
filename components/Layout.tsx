@@ -10,6 +10,7 @@ const navItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY },
+  { label: 'Career', path: RoutePath.CAREER },
   { label: 'Contact', path: RoutePath.CONTACT },
 ];
 
@@ -50,12 +51,14 @@ export const Navbar: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <Link
-            to={RoutePath.CONTACT}
+          <a
+            href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-sage text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md shadow-sage/20"
           >
             Admissions
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -88,7 +91,7 @@ export const Footer: React.FC = () => {
     <footer className="bg-[#2D312E] text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-1">
-          <h3 className="text-xl font-serif mb-6">Montessori Elizabeth</h3>
+          <h3 className="text-xl font-serif mb-6">Montessori School of Elizabeth</h3>
           <p className="text-sm text-slate-400 leading-relaxed italic">
             Intentional foundations for little hearts. Confident futures for big dreams.
           </p>
@@ -118,7 +121,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-        &copy; {new Date().getFullYear()} Montessori Elizabeth. All rights reserved.
+        &copy; {new Date().getFullYear()} Montessori School of Elizabeth. All rights reserved.
       </div>
     </footer>
   );

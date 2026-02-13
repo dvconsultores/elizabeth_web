@@ -7,6 +7,7 @@ import About from './pages/About';
 import Programs from './pages/Programs';
 import Philosophy from './pages/Philosophy';
 import Community from './pages/Community';
+import Career from './pages/Career';
 import Contact from './pages/Contact';
 import { RoutePath } from './types';
 
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Route path={RoutePath.PROGRAMS} element={<Programs />} />
           <Route path={RoutePath.PHILOSOPHY} element={<Philosophy />} />
           <Route path={RoutePath.COMMUNITY} element={<Community />} />
+          <Route path={RoutePath.CAREER} element={<Career />} />
           <Route path={RoutePath.CONTACT} element={<Contact />} />
           {/* Fallback */}
           <Route path="*" element={<Home />} />

@@ -51,45 +51,29 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="mt-12 flex gap-4">
-              <a href="#" className="w-10 h-10 border border-sage/20 rounded-full flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"><Instagram size={20} /></a>
-              <a href="#" className="w-10 h-10 border border-sage/20 rounded-full flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/montessorischoolofelizabeth?igsh=c2N1dHQ2aHhycHF1&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-sage/20 rounded-full flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"><Instagram size={20} /></a>
+              <a href="https://www.facebook.com/share/1LL5JvA4vo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-sage/20 rounded-full flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"><Facebook size={20} /></a>
             </div>
           </div>
 
           <div className="bg-white p-8 md:p-12 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100">
             <h3 className="text-3xl font-serif mb-8 text-slate-800">Request Information</h3>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Parent/Guardian Name</label>
-                  <input type="text" className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none" placeholder="John Doe" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Email Address</label>
-                  <input type="email" className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none" placeholder="john@email.com" />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Phone Number</label>
-                  <input type="text" className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none" placeholder="+58..." />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Program of Interest</label>
-                  <select className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none appearance-none">
-                    <option>Toddler Program</option>
-                    <option>Primary Program</option>
-                  </select>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-slate-400">Message</label>
-                <textarea rows={4} className="w-full bg-soft-cream border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-sage outline-none" placeholder="Tell us about your child..."></textarea>
-              </div>
-              <button className="w-full bg-sage text-white font-bold py-4 rounded-xl shadow-lg shadow-sage/30 hover:bg-opacity-90 transition-all uppercase tracking-widest text-sm">
-                Send Request
-              </button>
-            </form>
+            <div className="space-y-8 text-center py-12">
+              <p className="text-slate-600 text-lg leading-relaxed">
+                Ready to take the next step? Visit our admissions portal to schedule a tour, request information, or begin the enrollment process.
+              </p>
+              <a 
+                href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-sage text-white font-bold py-4 rounded-xl shadow-lg shadow-sage/30 hover:bg-opacity-90 transition-all uppercase tracking-widest text-sm"
+              >
+                Visit Admissions Portal
+              </a>
+              <p className="text-sm text-slate-500">
+                Or contact us directly at <a href="mailto:admissions@montessorielizabeth.com" className="text-sage hover:underline">admissions@montessorielizabeth.com</a>
+              </p>
+            </div>
           </div>
         </div>
 

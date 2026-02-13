@@ -19,5 +19,6 @@ export enum RoutePath {
   PROGRAMS = '/programas',
   PHILOSOPHY = '/filosofia',
   COMMUNITY = '/comunidad',
+  CAREER = '/career',
   CONTACT = '/contacto'
 }

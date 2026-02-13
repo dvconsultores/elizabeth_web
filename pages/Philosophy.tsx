@@ -25,7 +25,7 @@ const Philosophy: React.FC = () => {
           </div>
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-full overflow-hidden border-8 border-soft-cream shadow-2xl">
-              <img src="/10.png" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/1425868325.jpeg" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

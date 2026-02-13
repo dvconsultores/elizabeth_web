@@ -116,7 +116,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-center">
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
-              <img src="/6.png" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
+              <img src="/2163698537.jpeg" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
           <div className="space-y-12">

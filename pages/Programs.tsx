@@ -47,7 +47,7 @@ const Programs: React.FC = () => {
       ],
       footer: "Freedom exists within clear boundaries. Students choose purposeful work while guided by highly structured, safety-focused systems that create consistency and security. Outdoor learning remains a vital part of the educational experience — not as a break from learning, but as an extension of it.",
       closing: "Most importantly, children develop self-discipline, resilience, and an authentic love of learning. They learn how to concentrate. How to persist. How to lead. How to care for others. By the time they leave our Primary Program, they are not only academically prepared for kindergarten — they are confident, capable, and grounded in character. In the Primary years, little hearts grow strong. Big dreams begin to feel possible.",
-      img: "/8.png"
+      img: "/2352500623.jpeg"
     }
   ];
 
@@ -66,7 +66,7 @@ const Programs: React.FC = () => {
               <div className="flex-1">
                 <div className="relative group">
                   <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-                    <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                   </div>
                   <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-slate-100">
                     <span className="text-xs uppercase tracking-widest font-bold text-sage">Ages</span>

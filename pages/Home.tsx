@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
-              <img src="/2.png" alt="Authentic Montessori Materials" className="w-full h-full object-cover" />
+              <img src="/2.png" alt="Authentic Montessori Materials" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-sage/20 rounded-full blur-3xl -z-0"></div>
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-amber-100/30 rounded-full blur-3xl -z-0"></div>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             ].map((program, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl mb-6 relative">
-                  <img src={program.img} alt={program.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={program.img} alt={program.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-slate-800 shadow-md">
                     {program.age}
                   </div>

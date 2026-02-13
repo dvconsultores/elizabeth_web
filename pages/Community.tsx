@@ -20,10 +20,10 @@ const Community: React.FC = () => {
 
         {/* Gallery / Life at school */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
-          <img src="/11.png" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" />
-          <img src="/12.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" />
-          <img src="/13.png" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" />
-          <img src="/14.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" />
+          <img src="/11.png" className="w-full h-80 object-cover rounded-2xl" alt="Classroom work" loading="lazy" />
+          <img src="/12.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Children working" loading="lazy" />
+          <img src="/13.png" className="w-full h-80 object-cover rounded-2xl" alt="Outdoor play" loading="lazy" />
+          <img src="/14.png" className="w-full h-80 object-cover rounded-2xl md:translate-y-12" alt="Community events" loading="lazy" />
         </div>
 
         {/* Core Values Grid */}
@@ -95,7 +95,7 @@ const Community: React.FC = () => {
         {/* Image Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
           <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
-            <img src="/15.png" alt="Active community life" className="w-full h-full object-cover" />
+            <img src="/15.png" alt="Active community life" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="space-y-8">
             <p className="text-2xl md:text-3xl font-serif text-slate-800 leading-relaxed">

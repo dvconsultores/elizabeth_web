@@ -27,7 +27,7 @@ const Programs: React.FC = () => {
         "In accordance with licensing requirements, students must move from the Toddler Program by age three."
       ],
       closing: "Each transition is handled thoughtfully and in partnership with families, ensuring your child moves forward with confidence and continuity. These are the years where independence begins — and we honor them with intention.",
-      img: "/7.png"
+      img: "/2385344381.jpeg"
     },
     {
       title: "Primary Program",

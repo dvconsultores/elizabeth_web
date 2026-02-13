@@ -23,8 +23,7 @@ const Programs: React.FC = () => {
       footer: "We encourage children to take pride in small accomplishments — putting on their shoes, completing a task, caring for their environment. These moments build confidence that lasts far beyond the classroom.",
       transitions: [
         "Toilet learning is not incorporated into the Toddler curriculum.",
-        "Children may transition to a Primary classroom as early as 2½ years old based on readiness.",
-        "Students transition to our Primary Program at 30 months to support community needs.",
+        "Children may transition to a Primary classroom as early as 2½ years old based on readiness and community needs.",
         "In accordance with licensing requirements, students must move from the Toddler Program by age three."
       ],
       closing: "Each transition is handled thoughtfully and in partnership with families, ensuring your child moves forward with confidence and continuity. These are the years where independence begins — and we honor them with intention.",
@@ -58,7 +57,7 @@ const Programs: React.FC = () => {
         <div className="text-center mb-24">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Our Programs</span>
           <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Stages of Development</h1>
-          <p className="text-slate-500 max-w-2xl mx-auto text-lg">Each classroom is a thoughtfully designed prepared environment, aligned with the specific needs of each developmental plane and guided by Montessori principles.</p>
+          <p className="text-slate-500 max-w-2xl mx-auto text-lg">We prepare the whole child — mind, heart, and spirit.</p>
         </div>
 
         <div className="space-y-32">

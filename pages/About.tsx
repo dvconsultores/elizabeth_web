@@ -15,7 +15,7 @@ const About: React.FC = () => {
             Intentional Foundations for Little Hearts. Confident Futures for Big Dreams.
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed font-light italic mb-8">
-            "We build intentional foundations for little hearts, so they can grow into confident futures and big dreams."
+            "Education is the foundation. Life is the goal."
           </p>
           
           {/* Modal Trigger Button */}
@@ -138,11 +138,11 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8">
               <div className="border-l-2 border-sage pl-6">
                 <h3 className="font-serif text-xl mb-4">Mission</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">Our mission is to guide each child as they build the foundations that will help them discover who they are and what they love. During their time with us, we intentionally nurture curiosity, character, and confidence — laying the groundwork for a lifelong journey of growth. We strive to become an extension of your family, honoring the deep trust you place in us. Through collaboration and open communication, our educators work alongside you to design thoughtful learning roadmaps that support your child's academic and social-emotional development.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">Our mission is to guide each child as they build the foundations that will help them discover who they are and what they love. During their time with us, we intentionally nurture curiosity, character, and confidence — laying the groundwork for a lifelong journey of growth. We strive to become an extension of your family, honoring the deep trust you place in us.</p>
               </div>
               <div className="border-l-2 border-amber-200 pl-6">
                 <h3 className="font-serif text-xl mb-4">Vision</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">To be a leading early childhood learning community where every child is known, valued, and empowered to reach their full potential.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">To be a leading early childhood learning community where every child is known, valued, and empowered to reach their full potential. Through collaboration and open communication, our educators work alongside you to design thoughtful learning roadmaps that support your child's academic and social-emotional development. Together, we cultivate an environment where children feel known, supported, and inspired to reach their fullest potential.</p>
               </div>
             </div>
           </div>

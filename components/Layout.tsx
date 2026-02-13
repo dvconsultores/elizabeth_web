@@ -28,13 +28,7 @@ export const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'md:bg-transparent bg-white/95 backdrop-blur-sm md:shadow-none shadow-sm py-4 md:py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/MSE-T.png" alt="MSE Logo" className="h-16 w-auto" />
-          <div className="flex flex-col">
-            <span className={`text-2xl font-serif tracking-tight ${scrolled || isOpen ? 'text-sage font-semibold' : 'md:text-slate-900 md:font-bold text-sage font-semibold'}`}>
-              MONTESSORI ELIZABETH
-            </span>
-            <span className={`text-[10px] uppercase tracking-[0.2em] ${scrolled || isOpen ? 'font-medium opacity-70' : 'md:font-semibold md:text-slate-800 font-medium text-sage/80'}`}>Educational Excellence</span>
-          </div>
+          <img src="/MSE-T.png" alt="MSE Logo" className="h-24 w-auto" />
         </Link>
 
         {/* Desktop Menu */}

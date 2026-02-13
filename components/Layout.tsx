@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-xl font-serif mb-6">Montessori Elizabeth</h3>
           <p className="text-sm text-slate-400 leading-relaxed italic">
-            "Help me to do it by myself." Our commitment is to nurture the child's spirit in an environment of peace and respect.
+            Intentional foundations for little hearts. Confident futures for big dreams.
           </p>
         </div>
         <div>
@@ -108,16 +108,14 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Programs</h4>
           <ul className="space-y-3 text-sm text-slate-400">
-            <li>Nido / Infant Community</li>
-            <li>Children's House</li>
-            <li>Elementary Education</li>
-            <li>Parent Workshops</li>
+            <li><Link to={RoutePath.PROGRAMS} className="hover:text-white transition-colors">Toddler Program</Link></li>
+            <li><Link to={RoutePath.PROGRAMS} className="hover:text-white transition-colors">Primary Program</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Contact</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>Main Ave. Las Mercedes, Caracas, Venezuela</span></li>
+            <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+58 212 555-0123</span></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-sage" /> <span>contact@montessorielizabeth.com</span></li>
           </ul>

@@ -89,11 +89,10 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-serif mb-4 text-slate-800">Stages of Growth</h2>
             <p className="text-slate-500 max-w-2xl mx-auto">Accompanying your child's journey from their first steps to confident independence.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               { title: 'Our Toddlers', age: '1.5 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
-              { title: "Children's House", age: '3 to 6 years', img: '/4.png', desc: 'Sensorial exploration, mathematics, practical life, and culture.' },
-              { title: 'Elementary', age: '6 to 12 years', img: '/5.png', desc: 'Cosmic education, abstract reasoning, and collaboration.' }
+              { title: "Our Preschoolers", age: '3 to 6 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
             ].map((program, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl mb-6 relative">

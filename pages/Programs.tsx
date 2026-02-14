@@ -52,7 +52,7 @@ const Programs: React.FC = () => {
   ];
 
   return (
-    <div className="pt-32 pb-24 bg-soft-cream">
+    <div className="py-24 bg-soft-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Our Programs</span>

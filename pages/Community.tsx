@@ -4,7 +4,7 @@ import { Heart, Home, Leaf, Users, Shield, Sparkles } from 'lucide-react';
 
 const Community: React.FC = () => {
   return (
-    <div className="pt-32 pb-24">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Community</span>
@@ -14,7 +14,7 @@ const Community: React.FC = () => {
             <p>A place where they are known by name, understood for who they are, and gently guided as they grow.</p>
             <p>You want consistency. Warmth. Trust.</p>
             <p>You want to drop your child off each morning feeling confident they are cared for — not just supervised.</p>
-            <p className="text-slate-800 font-serif text-xl pt-4">That is why families choose Montessori School of Elizabeth.</p>
+            <p className="text-slate-800 font-serif text-xl pt-4">That is why families choose us!</p>
           </div>
         </div>
 

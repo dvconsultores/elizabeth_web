@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <div className="pt-32 pb-24 bg-soft-cream">
+    <div className="py-24 bg-soft-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>

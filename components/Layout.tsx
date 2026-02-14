@@ -10,7 +10,7 @@ const navItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY },
-  { label: 'Career', path: RoutePath.CAREER },
+  { label: 'Careers', path: RoutePath.CAREER },
   { label: 'Contact', path: RoutePath.CONTACT },
 ];
 
@@ -26,45 +26,50 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'md:bg-transparent bg-white/95 backdrop-blur-sm md:shadow-none shadow-sm py-4 md:py-6'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/MSE-T.png" alt="MSE Logo" className="h-24 w-auto" />
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 items-center">
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`text-sm transition-colors hover:text-sage ${
-                location.pathname === item.path 
-                  ? scrolled 
-                    ? 'text-sage font-bold'
-                    : 'text-slate-900 font-bold'
-                  : scrolled 
-                    ? 'text-slate-600 font-medium' 
-                    : 'text-slate-900 font-semibold'
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <a
-            href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-sage text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md shadow-sage/20"
-          >
-            Admissions
-          </a>
+    <nav className="relative w-full bg-white shadow-sm transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Mobile Header */}
+        <div className="md:hidden flex justify-between items-center py-3">
+          <Link to="/" className="flex items-center">
+            <img src="/image-320x320.jpg" alt="MSE Logo" className="h-20 w-auto" />
+          </Link>
+          <button className="text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
 
-        {/* Mobile Toggle */}
-        <button className="md:hidden text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        {/* Desktop Centered Layout */}
+        <div className="hidden md:flex flex-col items-center py-3">
+          {/* Logo */}
+          <Link to="/" className="mb-2">
+            <img src="/image-320x320.jpg" alt="MSE Logo" className="h-48 w-auto" />
+          </Link>
+          
+          {/* Navigation */}
+          <div className="flex space-x-8 items-center">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-sm transition-colors hover:text-sage ${
+                  location.pathname === item.path 
+                    ? 'text-sage font-bold'
+                    : 'text-slate-600 font-medium'
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <a
+              href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-sage text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md shadow-sage/20"
+            >
+              Waitlist
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Mobile Menu */}

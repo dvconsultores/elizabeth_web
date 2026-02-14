@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const Philosophy: React.FC = () => {
   return (
-    <div className="pt-32 pb-24">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
           <div className="order-2 lg:order-1">

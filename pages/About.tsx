@@ -1,12 +1,12 @@
 
 import React, { useState } from 'react';
-import { X, Award, CheckCircle } from 'lucide-react';
+import { X, Award, CheckCircle, Leaf } from 'lucide-react';
 
 const About: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mb-24">
@@ -112,8 +112,8 @@ const About: React.FC = () => {
           </div>
         )}
 
-        {/* History / Mission */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-center">
+        {/* History */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-start">
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
               <img src="/2163698537.jpeg" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" loading="lazy" />
@@ -135,15 +135,26 @@ const About: React.FC = () => {
                 Under her leadership, the school has experienced remarkable growth — expanding from two classrooms to two large early childhood centers, Montessori School of Castle Rock and Montessori School of Elizabeth— while maintaining its intentional, child-centered foundation. Her vision continues to shape a school environment where children are academically prepared, emotionally supported, culturally aware, and empowered to grow into confident individuals.
               </p>
             </section>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8">
+          </div>
+        </div>
+
+        {/* Mission / Vision with Image */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-start">
+          <div className="space-y-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
               <div className="border-l-2 border-sage pl-6">
                 <h3 className="font-serif text-xl mb-4">Mission</h3>
                 <p className="text-sm text-slate-500 leading-relaxed">Our mission is to guide each child as they build the foundations that will help them discover who they are and what they love. During their time with us, we intentionally nurture curiosity, character, and confidence — laying the groundwork for a lifelong journey of growth. We strive to become an extension of your family, honoring the deep trust you place in us.</p>
               </div>
               <div className="border-l-2 border-amber-200 pl-6">
                 <h3 className="font-serif text-xl mb-4">Vision</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">To be a leading early childhood learning community where every child is known, valued, and empowered to reach their full potential. Through collaboration and open communication, our educators work alongside you to design thoughtful learning roadmaps that support your child's academic and social-emotional development. Together, we cultivate an environment where children feel known, supported, and inspired to reach their fullest potential.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">Through collaboration and open communication, our educators work alongside you to design thoughtful learning roadmaps that support your child's academic and social-emotional development. Together, we cultivate an environment where children feel known, supported, and inspired to reach their fullest potential.</p>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
+              <img src="/2352495715.jpeg" alt="Montessori Elizabeth Mission Vision" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
@@ -159,39 +170,39 @@ const About: React.FC = () => {
               <h3 className="text-2xl font-serif mb-8 text-slate-800">We are a school that:</h3>
               <ul className="space-y-6 text-slate-600 leading-relaxed">
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Leads with Integrity and Intention</strong> — Where every decision — from curriculum to culture — reflects purpose, consistency, and long-term vision.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Sets the Standard for Early Childhood Excellence</strong> — Where academic readiness, executive function, and character development are cultivated with measurable care and precision.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Champions Whole-Child Development</strong> — Where intellectual growth is balanced with emotional intelligence, social awareness, resilience, and spiritual grounding.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Builds Deep Family Partnerships</strong> — Where communication is transparent, collaboration is valued, and families feel known, supported, and respected.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Cultivates Leadership from the Earliest Years</strong> — Where children learn responsibility, independence, grace, courtesy, and confidence through daily practice.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Honors Culture and Global Awareness</strong> — Where diversity is celebrated, languages are respected, and children grow with a broad understanding of the world around them.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Integrates Outdoor Learning with Purpose</strong> — Where nature is an extension of the classroom and movement supports meaningful cognitive development.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Operates with Structure and Safety at Its Core</strong> — Where highly organized, safety-focused systems provide consistency, security, and peace of mind.</div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
+                  <Leaf className="text-sage flex-shrink-0 mt-1" size={20} />
                   <div><strong>Prepares Children Not Just for Kindergarten — But for Life</strong> — Where students leave academically prepared, emotionally grounded, socially capable, and internally confident.</div>
                 </li>
               </ul>

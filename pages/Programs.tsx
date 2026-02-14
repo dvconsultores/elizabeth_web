@@ -7,7 +7,7 @@ const Programs: React.FC = () => {
     {
       title: "Toddler Program",
       subtitle: "Where Independence Begins",
-      age: "Ages: 12 months - 3 years old",
+      age: "Ages: 1 - 3 years old",
       description: "The toddler years are tender, powerful, and formative. They are the years when children begin to discover their voice, their will, and their growing sense of self.",
       content: [
         "At Montessori School of Elizabeth, our Toddler Program is thoughtfully designed to provide what young children need most: security, consistency, and gentle guidance.",

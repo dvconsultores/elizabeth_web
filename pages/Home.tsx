@@ -93,7 +93,7 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
-              { title: 'Our Toddlers', age: '1.5 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
+              { title: 'Our Toddlers', age: '1 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
               { title: "Our Preschoolers", age: '3 to 6 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
             ].map((program, idx) => (
               <div key={idx} className="group cursor-pointer">

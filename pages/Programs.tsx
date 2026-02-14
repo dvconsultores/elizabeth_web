@@ -32,10 +32,10 @@ const Programs: React.FC = () => {
     {
       title: "Primary Program",
       subtitle: "Where Confidence Takes Root",
-      age: "Ages: 2½ - 6 years old",
+      age: "Ages: 2½ - 5 years old",
       description: "The Primary years are a season of remarkable growth. Curiosity deepens. Concentration strengthens. Independence transforms into confidence.",
       content: [
-        "Our Primary Program serves children ages 2½ to 6 and builds upon the intentional foundations established in the toddler years.",
+        "Our Primary Program serves children ages 2½ to 5 and builds upon the intentional foundations established in the toddler years.",
         "In these classrooms, children are given the space and structure to grow intellectually, socially, emotionally, and spiritually. The environment is calm, purposeful, and beautifully prepared — inviting meaningful engagement and sustained focus."
       ],
       areas: [

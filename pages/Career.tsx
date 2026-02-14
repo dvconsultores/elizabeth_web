@@ -4,7 +4,7 @@ import { Sparkles, Heart, Users, TrendingUp, CheckCircle } from 'lucide-react';
 
 const Career: React.FC = () => {
   return (
-    <div className="py-24">
+    <div className="pt-40 pb-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Join Our Team</span>

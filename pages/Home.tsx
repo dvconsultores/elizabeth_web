@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-28 md:pt-0">
         <div className="absolute inset-0 z-0">
           <img 
             src="/1.png" 
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
-              <img src="/2428119075.jpeg" alt="Authentic Montessori Materials" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/2428119075.jpeg" alt="Authentic Montessori Materials" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-sage/20 rounded-full blur-3xl -z-0"></div>
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-amber-100/30 rounded-full blur-3xl -z-0"></div>
@@ -94,11 +94,11 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               { title: 'Our Toddlers', age: '1 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
-              { title: "Our Preschoolers", age: '3 to 5 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
+              { title: "Our Preschoolers", age: '2½ to 5 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
             ].map((program, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl mb-6 relative">
-                  <img src={program.img} alt={program.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <img src={program.img} alt={program.title} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-slate-800 shadow-md">
                     {program.age}
                   </div>

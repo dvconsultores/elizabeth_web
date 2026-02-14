@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <div className="py-24 bg-soft-cream">
+    <div className="pt-40 pb-24 bg-soft-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
 
         {/* Contact Photo */}
         <div className="mt-24 aspect-[21/9] bg-slate-200 rounded-3xl overflow-hidden relative shadow-2xl">
-          <img src="/2571604301.jpeg" alt="Montessori School of Elizabeth" className="w-full h-full object-cover" loading="lazy" />
+          <img src="/2571604301.jpeg" alt="Montessori School of Elizabeth" className="w-full h-full object-cover" />
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const About: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="py-24">
+    <div className="pt-40 pb-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mb-24">
@@ -116,7 +116,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32 items-start">
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
-              <img src="/2163698537.jpeg" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/2163698537.jpeg" alt="Montessori Elizabeth Legacy" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="space-y-12">
@@ -154,7 +154,7 @@ const About: React.FC = () => {
           </div>
           <div>
             <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
-              <img src="/2352495715.jpeg" alt="Montessori Elizabeth Mission Vision" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/2352495715.jpeg" alt="Montessori Elizabeth Mission Vision" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ const Programs: React.FC = () => {
   ];
 
   return (
-    <div className="py-24 bg-soft-cream">
+    <div className="pt-40 pb-24 bg-soft-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Our Programs</span>
@@ -66,7 +66,7 @@ const Programs: React.FC = () => {
               <div className="flex-1">
                 <div className="relative group">
                   <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-                    <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                    <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   </div>
                   <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-slate-100">
                     <span className="text-xs uppercase tracking-widest font-bold text-sage">Ages</span>

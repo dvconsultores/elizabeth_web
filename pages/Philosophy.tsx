@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const Philosophy: React.FC = () => {
   return (
-    <div className="py-24">
+    <div className="pt-40 pb-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
           <div className="order-2 lg:order-1">
@@ -25,7 +25,7 @@ const Philosophy: React.FC = () => {
           </div>
           <div className="order-1 lg:order-2">
             <div className="aspect-square rounded-full overflow-hidden border-8 border-soft-cream shadow-2xl">
-              <img src="/1425868325.jpeg" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/1425868325.jpeg" alt="Focus and concentration in the Montessori environment" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

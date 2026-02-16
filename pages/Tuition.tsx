@@ -8,7 +8,7 @@ const Tuition: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Investment</span>
-          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Tuition & Enrollment</h1>
+          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">TTuition & School Calendar</h1>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Investing in your child's early education is one of the most meaningful decisions you will make.
           </p>
@@ -127,13 +127,6 @@ const Tuition: React.FC = () => {
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">Discount</h4>
               <p>Families with multiple children enrolled receive a 10% discount on the lesser tuition for the second child. We honor 10% United States Active Military/Veteran discount. Only one discount applicable per family.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-100">
-              <h4 className="font-semibold text-slate-800 mb-2">School Calendar</h4>
-              <p className="flex items-center gap-2">
-                <Calendar size={18} className="text-sage" />
-                Download our full academic calendar to view holidays, breaks, and important dates.
-              </p>
             </div>
           </div>
         </div>

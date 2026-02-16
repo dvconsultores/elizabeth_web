@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Check, Calendar, Clock } from 'lucide-react';
+import { Check, Calendar, Clock, Download } from 'lucide-react';
 
 const Tuition: React.FC = () => {
   return (
@@ -24,22 +24,20 @@ const Tuition: React.FC = () => {
               <h3 className="text-2xl font-serif text-sage mb-2">Toddler Program</h3>
               <p className="text-slate-500 mb-6">Ages 1-3</p>
               
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-slate-100 pb-3">
-                  <span className="text-slate-700">Full Day (5 days/week)</span>
-                  <span className="font-bold text-slate-800">$1,295/month</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-slate-100 pb-3">
-                  <span className="text-slate-700">Part Time (3 days/week)</span>
-                  <span className="font-bold text-slate-800">$895/month</span>
-                </div>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-slate-100">
-                <div className="flex items-start gap-3 text-sm text-slate-600">
+              <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:00 AM - 4:15 PM</span>
+                  <span>Hours: 8:15 AM - 3:45 PM</span>
                 </div>
+                
+                <a
+                  href="/MSE-Tuition.pdf"
+                  download
+                  className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
+                >
+                  <Download size={18} />
+                  Download Rates
+                </a>
               </div>
             </div>
 
@@ -48,24 +46,38 @@ const Tuition: React.FC = () => {
               <h3 className="text-2xl font-serif text-sage mb-2">Primary Program</h3>
               <p className="text-slate-500 mb-6">Ages 2½-5</p>
               
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-slate-100 pb-3">
-                  <span className="text-slate-700">Full Day (5 days/week)</span>
-                  <span className="font-bold text-slate-800">$1,195/month</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-slate-100 pb-3">
-                  <span className="text-slate-700">Part Time (3 days/week)</span>
-                  <span className="font-bold text-slate-800">$795/month</span>
-                </div>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-slate-100">
-                <div className="flex items-start gap-3 text-sm text-slate-600">
+              <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:00 AM - 4:15 PM</span>
+                  <span>Hours: 8:15 AM - 3:45 PM</span>
                 </div>
+                
+                <a
+                  href="/MSE-Tuition.pdf"
+                  download
+                  className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
+                >
+                  <Download size={18} />
+                  Download Rates
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* School Calendar */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100 text-center">
+            <h3 className="text-2xl font-serif text-slate-800 mb-4">School Calendar</h3>
+            <p className="text-slate-600 mb-6">Download our full academic calendar to view holidays, breaks, and important dates.</p>
+            <a
+              href="/MSE-2026-2027-School-Year-Calendar.pdf"
+              download
+              className="inline-flex items-center gap-2 bg-sage text-white px-8 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform"
+            >
+              <Download size={18} />
+              Download Calendar
+            </a>
           </div>
         </div>
 
@@ -75,7 +87,7 @@ const Tuition: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-start gap-3">
               <Check className="text-sage flex-shrink-0 mt-1" size={20} />
-              <span className="text-slate-700">Daily Updates Given via Pictures, In-person or via Internal Messaging Platform</span>
+              <span className="text-slate-700">Daily updates</span>
             </div>
             <div className="flex items-start gap-3">
               <Check className="text-sage flex-shrink-0 mt-1" size={20} />
@@ -106,7 +118,7 @@ const Tuition: React.FC = () => {
           <div className="space-y-4 text-slate-700">
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">Registration Fee</h4>
-              <p>A non-refundable annual registration fee of $250 is required to secure your child's enrollment.</p>
+              <p>$250 due annually on August 1st and prorated by month of enrollment after August</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">Payment Schedule</h4>

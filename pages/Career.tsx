@@ -167,10 +167,6 @@ const Career: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid CDA, EQIT, Pyramid Plus, and additional professional development after 6 months</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
                   <span>A collaborative, uplifting team culture</span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -216,7 +212,7 @@ const Career: React.FC = () => {
                 href="mailto:astrid@montessorielizabeth.com?subject=Assistant Lead Teacher Application"
                 className="inline-block bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
               >
-                ✨ Apply Today
+                Apply Today
               </a>
             </div>
           </div>

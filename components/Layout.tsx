@@ -10,23 +10,16 @@ const navItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY },
-  { label: 'Contact', path: RoutePath.CONTACT },
+  { label: 'Contact Us', path: RoutePath.CONTACT },
   { label: 'Careers', path: RoutePath.CAREER },
 ];
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'bg-white/10 backdrop-blur-sm py-4'}`}>
+    <nav className="fixed w-full z-50 bg-white shadow-sm py-3 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
           <img src="/MSE-T.png" alt="MSE Logo" className="h-24 w-auto" />
@@ -39,13 +32,9 @@ export const Navbar: React.FC = () => {
               key={item.path}
               to={item.path}
               className={`text-sm transition-colors ${
-                scrolled || isOpen
-                  ? location.pathname === item.path 
-                    ? 'text-sage font-bold hover:text-sage' 
-                    : 'text-slate-600 font-medium hover:text-sage'
-                  : location.pathname === item.path
-                    ? 'text-white font-bold hover:text-white'
-                    : 'text-white/90 font-medium hover:text-white'
+                location.pathname === item.path 
+                  ? 'text-sage font-bold hover:text-sage' 
+                  : 'text-slate-600 font-medium hover:text-sage'
               }`}
             >
               {item.label}
@@ -62,7 +51,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className={`md:hidden p-2 ${scrolled || isOpen ? 'text-sage' : 'text-white'}`} onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -112,7 +101,7 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Contact</h4>
+          <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Contact Us</h4>
           <ul className="space-y-4 text-sm text-slate-400">
             <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+1 (303) 663-6942</span></li>

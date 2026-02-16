@@ -26,10 +26,10 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'bg-white shadow-sm py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'bg-white/10 backdrop-blur-sm py-4'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/image-320x320.jpg" alt="MSE Logo" className="h-24 w-auto" />
+          <img src="/MSE-T.png" alt="MSE Logo" className="h-24 w-auto" />
         </Link>
 
         {/* Desktop Menu */}
@@ -38,10 +38,14 @@ export const Navbar: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm transition-colors hover:text-sage ${
-                location.pathname === item.path 
-                  ? 'text-sage font-bold'
-                  : 'text-slate-600 font-medium'
+              className={`text-sm transition-colors ${
+                scrolled || isOpen
+                  ? location.pathname === item.path 
+                    ? 'text-sage font-bold hover:text-sage' 
+                    : 'text-slate-600 font-medium hover:text-sage'
+                  : location.pathname === item.path
+                    ? 'text-white font-bold hover:text-white'
+                    : 'text-white/90 font-medium hover:text-white'
               }`}
             >
               {item.label}
@@ -58,7 +62,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
+        <button className={`md:hidden p-2 ${scrolled || isOpen ? 'text-sage' : 'text-white'}`} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>

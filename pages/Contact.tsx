@@ -1,8 +1,30 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:admissions@montessorielizabeth.com?subject=Contact Form Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   return (
     <div className="pt-40 pb-24 bg-soft-cream">
       <div className="max-w-7xl mx-auto px-6">
@@ -57,23 +79,82 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="bg-white p-8 md:p-12 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100">
-            <h3 className="text-3xl font-serif mb-8 text-slate-800">Request Information</h3>
-            <div className="space-y-8 text-center py-12">
-              <p className="text-slate-600 text-lg leading-relaxed">
-                Ready to take the next step? Visit our admissions portal to schedule a tour, request information, or begin the enrollment process.
-              </p>
-              <a 
-                href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-sage text-white font-bold py-4 rounded-xl shadow-lg shadow-sage/30 hover:bg-opacity-90 transition-all uppercase tracking-widest text-sm"
+            <h3 className="text-3xl font-serif mb-8 text-slate-800">Get in Touch</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent outline-none transition-all"
+                  placeholder="Your name"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent outline-none transition-all"
+                  placeholder="your@email.com"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent outline-none transition-all"
+                  placeholder="(303) 555-1234"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={5}
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent outline-none transition-all resize-none"
+                  placeholder="Tell us about your child and what you're looking for..."
+                />
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full bg-sage text-white font-bold py-4 rounded-xl shadow-lg shadow-sage/30 hover:bg-opacity-90 transition-all uppercase tracking-widest text-sm"
               >
-                Visit Admissions Portal
-              </a>
-              <p className="text-sm text-slate-500">
-                Or contact us directly at <a href="mailto:admissions@montessorielizabeth.com" className="text-sage hover:underline">admissions@montessorielizabeth.com</a>
+                Send Message
+              </button>
+              
+              <p className="text-sm text-slate-500 text-center">
+                Or email us directly at <a href="mailto:admissions@montessorielizabeth.com" className="text-sage hover:underline">admissions@montessorielizabeth.com</a>
               </p>
-            </div>
+            </form>
           </div>
         </div>
 

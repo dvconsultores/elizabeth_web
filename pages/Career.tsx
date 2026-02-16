@@ -159,11 +159,11 @@ const Career: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid snow days (aligned with Douglas County Public Schools)</span>
+                  <span>Paid snow days aligned with the District Public Schools</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>401k with 4% employer match</span>
+                  <span>Paid developmental pathways and professional development certifications after 1 year of employment</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
@@ -178,6 +178,9 @@ const Career: React.FC = () => {
                   <span>Leadership that values your voice</span>
                 </li>
               </ul>
+              <p className="text-slate-700 font-semibold mt-6">
+                We invest in our staff and promote from within.
+              </p>
             </div>
 
             {/* Compensation */}

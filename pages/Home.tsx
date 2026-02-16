@@ -26,12 +26,10 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:admissions@montessorielizabeth.com?subject=Schedule a Tour"
               className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-sage hover:text-white transition-all transform hover:scale-105 shadow-xl text-center"
             >
-              Schedule a Visit
+              Schedule a Tour
             </a>
             <Link 
               to={RoutePath.PROGRAMS} 
@@ -144,12 +142,10 @@ const Home: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-serif mb-6 text-slate-800">Ready to join our family?</h2>
           <p className="text-slate-500 mb-10 text-lg">Our admission process is designed to ensure a perfect harmony between our school's vision and your family's educational goals.</p>
           <a
-            href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:admissions@montessorielizabeth.com?subject=Admissions Inquiry"
             className="inline-block bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
           >
-            Inquire About Admissions
+            Schedule a Tour
           </a>
         </div>
       </section>

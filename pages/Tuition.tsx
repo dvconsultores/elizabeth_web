@@ -75,7 +75,7 @@ const Tuition: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-start gap-3">
               <Check className="text-sage flex-shrink-0 mt-1" size={20} />
-              <span className="text-slate-700">Morning and afternoon snacks</span>
+              <span className="text-slate-700">Daily Updates Given via Pictures, In-person or via Internal Messaging Platform</span>
             </div>
             <div className="flex items-start gap-3">
               <Check className="text-sage flex-shrink-0 mt-1" size={20} />
@@ -106,15 +106,15 @@ const Tuition: React.FC = () => {
           <div className="space-y-4 text-slate-700">
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">Registration Fee</h4>
-              <p>A non-refundable registration fee of $250 is required to secure your child's enrollment.</p>
+              <p>A non-refundable annual registration fee of $250 is required to secure your child's enrollment.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">Payment Schedule</h4>
-              <p>Tuition is paid monthly via automatic bank draft on the 1st of each month. Payment plans are available upon request.</p>
+              <p>Tuition is paid monthly via ACH or Credit Card on the 1st of each month. Tuition guarantees your child's spot, so it is not based on attendance.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-slate-100">
-              <h4 className="font-semibold text-slate-800 mb-2">Sibling Discount</h4>
-              <p>Families with multiple children enrolled receive a 10% discount on the second child's tuition.</p>
+              <h4 className="font-semibold text-slate-800 mb-2">Discount</h4>
+              <p>Families with multiple children enrolled receive a 10% discount on the lesser tuition for the second child. We honor 10% United States Active Military/Veteran discount. Only one discount applicable per family.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-slate-100">
               <h4 className="font-semibold text-slate-800 mb-2">School Calendar</h4>

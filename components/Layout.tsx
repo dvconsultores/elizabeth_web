@@ -16,7 +16,7 @@ const navItems = [
 
 const programsDropdownItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
-  { label: 'Tuition', path: RoutePath.TUITION },
+  { label: 'Tuition', path: '/MSE-Tuition.pdf', isDownload: true },
   { label: 'Calendar', path: '/MSE-2026-2027-School-Year-Calendar.pdf', isDownload: true },
 ];
 

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronDown, Clock } from 'lucide-react';
 import { RoutePath } from '../types';
 
 const navItems = [
@@ -232,6 +232,7 @@ export const Footer: React.FC = () => {
             <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+1 (303) 663-6942</span></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-sage" /> <span>admissions@montessorielizabeth.com</span></li>
+            <li className="flex items-center gap-3"><Clock size={18} className="text-sage" /> <span>School Hours: 8:15 AM - 3:45 PM</span></li>
           </ul>
         </div>
       </div>

@@ -108,6 +108,15 @@ const Contact: React.FC = () => {
                   <p className="text-slate-500">admissions@montessorielizabeth.com</p>
                 </div>
               </div>
+              <div className="flex items-start gap-6">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sage shadow-sm">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h4 className="font-serif font-bold text-slate-800 text-xl">School Hours</h4>
+                  <p className="text-slate-500">8:15 AM - 3:45 PM</p>
+                </div>
+              </div>
             </div>
 
             <div className="mt-12 flex gap-4">

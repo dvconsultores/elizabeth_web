@@ -31,13 +31,6 @@ const Home: React.FC = () => {
             >
               Schedule a Tour
             </a>
-            <a
-              href="/MSE-Tuition.pdf"
-              download
-              className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-white/90 active:bg-white transition-all transform hover:scale-105 shadow-xl text-center"
-            >
-              Tuition
-            </a>
             <Link 
               to={RoutePath.PROGRAMS} 
               className="bg-transparent border border-white/40 backdrop-blur-sm text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition-all"
@@ -154,13 +147,6 @@ const Home: React.FC = () => {
               className="bg-sage text-slate-800 px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 active:scale-100 transition-transform"
             >
               Schedule a Tour
-            </a>
-            <a
-              href="/MSE-Tuition.pdf"
-              download
-              className="bg-sage text-slate-800 px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 active:scale-100 transition-transform"
-            >
-              Tuition
             </a>
           </div>
         </div>

@@ -16,16 +16,24 @@ const navItems = [
 
 const programsDropdownItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
-  { label: 'Tuition', path: '/MSE-Tuition.pdf', isDownload: true },
+  { label: 'Tuition', path: RoutePath.TUITION },
   { label: 'Calendar', path: '/MSE-2026-2027-School-Year-Calendar.pdf', isDownload: true },
 ];
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === RoutePath.HOME;
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -39,7 +47,11 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="fixed w-full z-50 bg-white shadow-sm py-3 transition-all duration-300">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      isHomePage 
+        ? (scrolled || isOpen ? 'bg-white shadow-sm py-3' : 'bg-white/10 backdrop-blur-sm py-4')
+        : 'bg-white shadow-sm py-3'
+    }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
           <img src="/MSE-T.png" alt="MSE Logo" className="h-24 w-auto" />
@@ -53,9 +65,13 @@ export const Navbar: React.FC = () => {
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   className={`text-sm transition-colors flex items-center gap-1 ${
-                    location.pathname === item.path 
-                      ? 'text-sage font-bold hover:text-sage' 
-                      : 'text-slate-600 font-medium hover:text-sage'
+                    (isHomePage && !scrolled && !isOpen)
+                      ? location.pathname === item.path
+                        ? 'text-white font-bold hover:text-white'
+                        : 'text-white/90 font-medium hover:text-white'
+                      : location.pathname === item.path 
+                        ? 'text-sage font-bold hover:text-sage' 
+                        : 'text-slate-600 font-medium hover:text-sage'
                   }`}
                 >
                   {item.label}
@@ -93,9 +109,13 @@ export const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 className={`text-sm transition-colors ${
-                  location.pathname === item.path 
-                    ? 'text-sage font-bold hover:text-sage' 
-                    : 'text-slate-600 font-medium hover:text-sage'
+                  (isHomePage && !scrolled && !isOpen)
+                    ? location.pathname === item.path
+                      ? 'text-white font-bold hover:text-white'
+                      : 'text-white/90 font-medium hover:text-white'
+                    : location.pathname === item.path 
+                      ? 'text-sage font-bold hover:text-sage' 
+                      : 'text-slate-600 font-medium hover:text-sage'
                 }`}
               >
                 {item.label}
@@ -113,7 +133,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-sage p-2" onClick={() => setIsOpen(!isOpen)}>
+        <button className={`md:hidden p-2 ${(isHomePage && !scrolled && !isOpen) ? 'text-white' : 'text-sage'}`} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>

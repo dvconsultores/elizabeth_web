@@ -10,8 +10,8 @@ const navItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY },
-  { label: 'Careers', path: RoutePath.CAREER },
   { label: 'Contact', path: RoutePath.CONTACT },
+  { label: 'Careers', path: RoutePath.CAREER },
 ];
 
 export const Navbar: React.FC = () => {

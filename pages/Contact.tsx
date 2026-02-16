@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Facebook, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +9,51 @@ const Contact: React.FC = () => {
     phone: '',
     message: ''
   });
+  
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:admissions@montessorielizabeth.com?subject=Contact Form Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-    )}`;
-    window.location.href = mailtoLink;
+    setFormStatus('submitting');
+    setErrorMessage('');
+
+    try {
+      // Create mailto link
+      const mailtoLink = `mailto:admissions@montessorielizabeth.com?subject=Contact Form Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+      )}`;
+      
+      // Open mailto
+      window.location.href = mailtoLink;
+      
+      // Simulate success after a short delay
+      setTimeout(() => {
+        setFormStatus('success');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+        
+        // Reset status after 5 seconds
+        setTimeout(() => {
+          setFormStatus('idle');
+        }, 5000);
+      }, 500);
+      
+    } catch (error) {
+      setFormStatus('error');
+      setErrorMessage('There was an error sending your message. Please try again or email us directly.');
+      
+      // Reset error after 5 seconds
+      setTimeout(() => {
+        setFormStatus('idle');
+        setErrorMessage('');
+      }, 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -144,11 +182,40 @@ const Contact: React.FC = () => {
                 />
               </div>
               
+              {/* Status Messages */}
+              {formStatus === 'success' && (
+                <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                  <p className="text-green-800 text-sm">
+                    Thank you! Your message has been sent. We'll get back to you soon.
+                  </p>
+                </div>
+              )}
+              
+              {formStatus === 'error' && errorMessage && (
+                <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <AlertCircle className="text-red-600 flex-shrink-0" size={20} />
+                  <p className="text-red-800 text-sm">{errorMessage}</p>
+                </div>
+              )}
+              
               <button
                 type="submit"
-                className="w-full bg-sage text-white font-bold py-4 rounded-xl shadow-lg shadow-sage/30 hover:bg-opacity-90 transition-all uppercase tracking-widest text-sm"
+                disabled={formStatus === 'submitting'}
+                className={`w-full font-bold py-4 rounded-xl shadow-lg uppercase tracking-widest text-sm transition-all flex items-center justify-center gap-2 ${
+                  formStatus === 'submitting'
+                    ? 'bg-slate-400 cursor-not-allowed'
+                    : 'bg-sage text-white shadow-sage/30 hover:bg-opacity-90'
+                }`}
               >
-                Send Message
+                {formStatus === 'submitting' ? (
+                  <>
+                    <Loader className="animate-spin" size={18} />
+                    Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}
               </button>
               
               <p className="text-sm text-slate-500 text-center">

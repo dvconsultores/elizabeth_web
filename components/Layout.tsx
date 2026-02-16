@@ -1,22 +1,42 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
 import { RoutePath } from '../types';
 
 const navItems = [
   { label: 'Home', path: RoutePath.HOME },
   { label: 'About Us', path: RoutePath.ABOUT },
-  { label: 'Programs', path: RoutePath.PROGRAMS },
+  { label: 'Programs', path: RoutePath.PROGRAMS, hasDropdown: true },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY },
   { label: 'Contact Us', path: RoutePath.CONTACT },
   { label: 'Careers', path: RoutePath.CAREER },
 ];
 
+const programsDropdownItems = [
+  { label: 'Programs', path: RoutePath.PROGRAMS },
+  { label: 'Tuition', path: RoutePath.TUITION },
+  { label: 'Calendar', path: '/MSE-2026-2027-School-Year-Calendar.pdf', isDownload: true },
+];
+
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <nav className="fixed w-full z-50 bg-white shadow-sm py-3 transition-all duration-300">
@@ -28,17 +48,59 @@ export const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 items-center">
           {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`text-sm transition-colors ${
-                location.pathname === item.path 
-                  ? 'text-sage font-bold hover:text-sage' 
-                  : 'text-slate-600 font-medium hover:text-sage'
-              }`}
-            >
-              {item.label}
-            </Link>
+            item.hasDropdown ? (
+              <div key={item.path} className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className={`text-sm transition-colors flex items-center gap-1 ${
+                    location.pathname === item.path 
+                      ? 'text-sage font-bold hover:text-sage' 
+                      : 'text-slate-600 font-medium hover:text-sage'
+                  }`}
+                >
+                  {item.label}
+                  <ChevronDown size={16} className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {dropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-xl border border-slate-100 py-2 min-w-[180px] z-50">
+                    {programsDropdownItems.map((dropItem) => (
+                      dropItem.isDownload ? (
+                        <a
+                          key={dropItem.path}
+                          href={dropItem.path}
+                          download
+                          className="block px-4 py-2 text-sm text-slate-600 hover:bg-sage/10 hover:text-sage transition-colors"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          {dropItem.label}
+                        </a>
+                      ) : (
+                        <Link
+                          key={dropItem.path}
+                          to={dropItem.path}
+                          className="block px-4 py-2 text-sm text-slate-600 hover:bg-sage/10 hover:text-sage transition-colors"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          {dropItem.label}
+                        </Link>
+                      )
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-sm transition-colors ${
+                  location.pathname === item.path 
+                    ? 'text-sage font-bold hover:text-sage' 
+                    : 'text-slate-600 font-medium hover:text-sage'
+                }`}
+              >
+                {item.label}
+              </Link>
+            )
           ))}
           <a
             href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
@@ -60,14 +122,58 @@ export const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 px-6 flex flex-col space-y-4">
           {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-              className="text-lg font-serif border-b border-slate-100 pb-2"
-            >
-              {item.label}
-            </Link>
+            item.hasDropdown ? (
+              <div key={item.path}>
+                <button
+                  onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                  className="text-lg font-serif border-b border-slate-100 pb-2 w-full text-left flex items-center justify-between"
+                >
+                  {item.label}
+                  <ChevronDown size={20} className={`transition-transform ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileDropdownOpen && (
+                  <div className="pl-4 mt-2 space-y-2">
+                    {programsDropdownItems.map((dropItem) => (
+                      dropItem.isDownload ? (
+                        <a
+                          key={dropItem.path}
+                          href={dropItem.path}
+                          download
+                          className="block py-2 text-slate-600 text-base"
+                          onClick={() => {
+                            setIsOpen(false);
+                            setMobileDropdownOpen(false);
+                          }}
+                        >
+                          {dropItem.label}
+                        </a>
+                      ) : (
+                        <Link
+                          key={dropItem.path}
+                          to={dropItem.path}
+                          className="block py-2 text-slate-600 text-base"
+                          onClick={() => {
+                            setIsOpen(false);
+                            setMobileDropdownOpen(false);
+                          }}
+                        >
+                          {dropItem.label}
+                        </Link>
+                      )
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className="text-lg font-serif border-b border-slate-100 pb-2"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </div>
       )}

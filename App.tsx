@@ -5,6 +5,7 @@ import { Layout } from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
+import Tuition from './pages/Tuition';
 import Philosophy from './pages/Philosophy';
 import Community from './pages/Community';
 import Career from './pages/Career';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path={RoutePath.HOME} element={<Home />} />
           <Route path={RoutePath.ABOUT} element={<About />} />
           <Route path={RoutePath.PROGRAMS} element={<Programs />} />
+          <Route path={RoutePath.TUITION} element={<Tuition />} />
           <Route path={RoutePath.PHILOSOPHY} element={<Philosophy />} />
           <Route path={RoutePath.COMMUNITY} element={<Community />} />
           <Route path={RoutePath.CAREER} element={<Career />} />

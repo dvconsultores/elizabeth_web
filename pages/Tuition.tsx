@@ -8,7 +8,7 @@ const Tuition: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Investment</span>
-          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">TTuition & School Calendar</h1>
+          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Tuition & School Calendar</h1>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Investing in your child's early education is one of the most meaningful decisions you will make.
           </p>

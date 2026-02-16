@@ -27,14 +27,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:admissions@montessorielizabeth.com?subject=Schedule a Tour"
-              className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-sage hover:text-white transition-all transform hover:scale-105 shadow-xl text-center"
+              className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-white/90 active:bg-white transition-all transform hover:scale-105 shadow-xl text-center"
             >
               Schedule a Tour
             </a>
             <a
               href="/MSE-Tuition.pdf"
               download
-              className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-sage hover:text-white transition-all transform hover:scale-105 shadow-xl text-center"
+              className="bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:bg-white/90 active:bg-white transition-all transform hover:scale-105 shadow-xl text-center"
             >
               Tuition
             </a>
@@ -151,14 +151,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:admissions@montessorielizabeth.com?subject=Admissions Inquiry"
-              className="bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
+              className="bg-sage text-slate-800 px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 active:scale-100 transition-transform"
             >
               Schedule a Tour
             </a>
             <a
               href="/MSE-Tuition.pdf"
               download
-              className="bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
+              className="bg-sage text-slate-800 px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 active:scale-100 transition-transform"
             >
               Tuition
             </a>

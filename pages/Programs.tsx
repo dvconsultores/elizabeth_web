@@ -5,6 +5,28 @@ import { Check } from 'lucide-react';
 const Programs: React.FC = () => {
   const programs = [
     {
+      title: "Infant Program",
+      subtitle: "Gentle Beginnings",
+      age: "Ages: 6 Months - 18 Months old",
+      description: "Our Infant Program is designed to provide a calm, nurturing environment where your baby feels safe, seen, and deeply cared for. During these earliest months, every interaction matters—and we approach each moment with intention, respect, and warmth.",
+      content: [
+        "We believe that even the youngest children are capable, aware, and worthy of meaningful connection. Our role is to support their development with gentle guidance, consistent care, and a thoughtfully prepared environment."
+      ],
+      areas: [
+        "Move freely and safely",
+        "Explore at their own pace",
+        "Rest according to their individual rhythm",
+        "Build trust through consistent, loving caregivers",
+        "Motor Development through movement and floor-based exploration",
+        "Language Development through conversation, songs, and connection",
+        "Cognitive Growth through simple, purposeful materials",
+        "Social-Emotional Security through responsive caregiving"
+      ],
+      footer: "A Peaceful, Nurturing Environment: Our infant space is intentionally designed to feel more like a home than a classroom—soft lighting, natural materials, and a peaceful atmosphere that supports regulation and security. Responsive, Relationship-Based Care: We prioritize strong, secure attachments between caregivers and children. Our teachers are attentive, present, and responsive—creating a foundation of trust that supports emotional development and confidence. Rather than rushing milestones, we honor each child's unique timeline with individualized feeding and sleep schedules, gentle transitions and predictable routines, and warm, one-on-one interactions throughout the day.",
+      closing: "Every detail is intentional—because these early experiences shape a child's lifelong confidence and curiosity.",
+      img: "/infant.jpeg"
+    },
+    {
       title: "Toddler Program",
       subtitle: "Where Independence Begins",
       age: "Ages: 1 - 3 years old",

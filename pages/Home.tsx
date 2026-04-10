@@ -89,8 +89,9 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-serif mb-4 text-slate-800">Stages of Growth</h2>
             <p className="text-slate-500 max-w-2xl mx-auto">Accompanying your child's journey from their first steps to confident independence.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
+              { title: 'Infant Program', age: '6 Months to 18 Months', img: '/infant.jpeg', desc: 'Gentle Beginnings. A calm, nurturing environment where your baby feels safe, seen, and deeply cared for.' },
               { title: 'Our Toddlers', age: '1 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
               { title: "Our Preschoolers", age: '2½ to 5 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
             ].map((program, idx) => (

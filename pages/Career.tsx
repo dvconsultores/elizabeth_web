@@ -24,10 +24,10 @@ const Career: React.FC = () => {
             
             <div className="mb-8">
               <p className="text-slate-700 text-lg leading-relaxed mb-4">
-                We are building intentional foundations for little hearts and confident futures for big dreams — and we're looking for someone who feels called to be part of that mission.
+                We are building intentional foundations for little hearts and confident futures for big dreams—and we're looking for someone who feels called to be part of that work.
               </p>
               <p className="text-slate-700 text-lg leading-relaxed font-semibold">
-                This is more than a classroom position. It's an opportunity to shape developing minds during the most important years of life.
+                This is more than a classroom position. It is an opportunity to guide and shape children during the most formative years of their development.
               </p>
             </div>
 
@@ -37,47 +37,47 @@ const Career: React.FC = () => {
                 <Sparkles className="text-sage" size={24} />
                 <h3 className="text-2xl font-serif text-slate-800">What You'll Do</h3>
               </div>
-              <p className="text-slate-700 mb-4">As our Assistant Lead Teacher, you will:</p>
+              <p className="text-slate-700 mb-4">As an Assistant Lead Teacher, you will:</p>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Support children ages 1–5 in a calm, Montessori-inspired environment</span>
+                  <span>Support children ages 6 weeks through 5 years within a calm, Montessori-inspired environment</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Help prepare thoughtful classroom spaces based on child-led interests</span>
+                  <span>Help prepare intentional, thoughtfully designed classroom spaces guided by children's interests</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Guide children through their day with patience, warmth, and consistency</span>
+                  <span>Lead children through their day with patience, warmth, and consistency</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Confidently manage the classroom within ratio when the Lead Teacher is absent</span>
+                  <span>Confidently support classroom leadership and manage within ratio when the Lead Teacher is absent</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Foster independence, social-emotional development, language growth, and fine/gross motor skills</span>
+                  <span>Foster independence, social-emotional growth, language development, and fine and gross motor skills</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Maintain a clean, organized, and beautiful environment (including diapering, snack prep, and daily sanitizing)</span>
+                  <span>Maintain a clean, organized, and beautiful environment, including diapering, snack preparation, and daily sanitizing</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Build respectful, professional relationships with families</span>
+                  <span>Build respectful, professional partnerships with families</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Collaborate closely with your teaching team to create a supportive, unified classroom culture</span>
+                  <span>Collaborate closely with your team to create a supportive, aligned classroom culture</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Continue professional growth through annual development and licensing requirements</span>
+                  <span>Continue your professional growth through ongoing development and licensing requirements</span>
                 </li>
               </ul>
               <p className="text-slate-700 italic mt-6">
-                You will be mentored and supported by experienced educators who are invested in your growth.
+                You will be supported by experienced educators who are deeply invested in your growth and success.
               </p>
             </div>
 
@@ -87,35 +87,35 @@ const Career: React.FC = () => {
                 <Heart className="text-sage" size={24} />
                 <h3 className="text-2xl font-serif text-slate-800">The Ideal Candidate</h3>
               </div>
-              <p className="text-slate-700 mb-4">You may be the right fit if you:</p>
+              <p className="text-slate-700 mb-4">You may be a great fit if you:</p>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are patient, dependable, and deeply nurturing</span>
+                  <span>Are patient, dependable, and genuinely nurturing</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>See early childhood as meaningful, important work</span>
+                  <span>View early childhood education as meaningful, purposeful work</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Take initiative and are curious about child development</span>
+                  <span>Take initiative and demonstrate curiosity about child development</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Adapt with grace when days shift (because preschool life does!)</span>
+                  <span>Adapt with grace and flexibility as each day unfolds</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Thrive in a team-centered, positive work culture</span>
+                  <span>Thrive in a collaborative, team-centered environment</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Communicate professionally with families and staff</span>
+                  <span>Communicate professionally and thoughtfully with both families and colleagues</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are qualified — or willing to become qualified — through Colorado Shines Level 2</span>
+                  <span>Are qualified—or willing to become qualified—through Colorado Shines Level 2</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
@@ -123,11 +123,11 @@ const Career: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are eager to continue refining your craft through professional development</span>
+                  <span>Are committed to continual growth and refining your craft</span>
                 </li>
               </ul>
               <p className="text-slate-700 italic mt-6">
-                We value educators who are both grounded and growth-oriented.
+                We value educators who are grounded in their presence and committed to growth.
               </p>
             </div>
 
@@ -138,44 +138,44 @@ const Career: React.FC = () => {
                 <h3 className="text-2xl font-serif text-slate-800">Why Join Us?</h3>
               </div>
               <p className="text-slate-700 mb-4">
-                We are a small, woman-owned school that believes teachers deserve respect, balance, and support.
+                We are a small, woman-owned school rooted in the belief that teachers deserve to feel respected, supported, and valued in their work.
               </p>
               <p className="text-slate-700 mb-4">
-                We care deeply about mental well-being, professional growth, and sustainable work-life balance.
+                We prioritize mental well-being, professional growth, and a sustainable work-life balance—because when our team feels supported, our children thrive.
               </p>
-              <p className="text-slate-700 font-semibold mb-4">We proudly offer:</p>
+              <p className="text-slate-700 font-semibold mb-4">What we offer:</p>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>20+ paid predetermined PTO days after 90 days</span>
+                  <span>20+ paid, predetermined PTO days after 90 days</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Sick pay accrued at 1 hour per 30 hours worked</span>
+                  <span>Comprehensive PTO Structure: During your first 12 months of employment, PTO is accrued at a rate of 1 hour for every 30 hours worked. After one year of employment, 10 PTO days are granted annually at the start of the year (frontloaded rather than accrued)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>10 additional PTO days after one year</span>
+                  <span>Paid snow days aligned with local district and county closures</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid snow days aligned with the District Public Schools</span>
+                  <span>Paid professional development pathways and certifications after one year</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid developmental pathways and professional development certifications after 1 year of employment</span>
+                  <span>401k Plan</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>A collaborative, uplifting team culture</span>
+                  <span>A collaborative, uplifting team environment</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Leadership that values your voice</span>
+                  <span>Leadership that listens, values your voice, and supports your growth</span>
                 </li>
               </ul>
               <p className="text-slate-700 font-semibold mt-6">
-                We invest in our staff and promote from within.
+                We are committed to investing in our team and prioritize internal growth and promotion whenever possible.
               </p>
             </div>
 
@@ -205,8 +205,11 @@ const Career: React.FC = () => {
             {/* Call to Action */}
             <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20">
               <p className="text-slate-800 text-lg leading-relaxed mb-6">
-                If you feel called to guide young children with intention, warmth, and purpose —<br />
-                <span className="font-semibold">we would love to meet you.</span>
+                We are committed to investing in our team and prioritize internal growth and promotion whenever possible.<br />
+                <span className="font-semibold">We welcome educators who are grounded in their presence and committed to growth.</span>
+              </p>
+              <p className="text-slate-700 text-sm mb-6 italic">
+                If you are interested in opportunities beyond this role, we welcome you to inquire about other available positions within our school community.
               </p>
               <a
                 href="mailto:astrid@montessorielizabeth.com?subject=Assistant Lead Teacher Application"

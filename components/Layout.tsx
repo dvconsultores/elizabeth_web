@@ -222,6 +222,7 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="font-medium mb-6 uppercase tracking-wider text-xs">Programs</h4>
           <ul className="space-y-3 text-sm text-slate-400">
+            <li><Link to={RoutePath.PROGRAMS} className="hover:text-white transition-colors">Infant Program</Link></li>
             <li><Link to={RoutePath.PROGRAMS} className="hover:text-white transition-colors">Toddler Program</Link></li>
             <li><Link to={RoutePath.PROGRAMS} className="hover:text-white transition-colors">Primary Program</Link></li>
           </ul>
@@ -232,7 +233,7 @@ export const Footer: React.FC = () => {
             <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+1 (719)-744-3692</span></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-sage" /> <span>admissions@montessorielizabeth.com</span></li>
-            <li className="flex items-center gap-3"><Clock size={18} className="text-sage" /> <span>School Hours: 8:15 AM - 3:45 PM</span></li>
+            <li className="flex items-center gap-3"><Clock size={18} className="text-sage" /> <span>School Hours: 8:15 AM - 5:15 PM</span></li>
           </ul>
         </div>
       </div>

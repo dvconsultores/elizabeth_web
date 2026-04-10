@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-serif font-bold text-slate-800 text-xl">School Hours</h4>
-                  <p className="text-slate-500">8:15 AM - 3:45 PM</p>
+                  <p className="text-slate-500">8:15 AM - 5:15 PM</p>
                 </div>
               </div>
             </div>

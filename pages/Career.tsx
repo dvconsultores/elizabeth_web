@@ -197,7 +197,7 @@ const Career: React.FC = () => {
                 </div>
                 <div className="bg-soft-cream p-6 rounded-2xl">
                   <p className="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Shift</p>
-                  <p className="text-2xl font-serif text-slate-800">8:00 AM – 4:15 PM</p>
+                  <p className="text-2xl font-serif text-slate-800">8:00 AM – 5:30 PM</p>
                 </div>
               </div>
             </div>

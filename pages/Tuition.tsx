@@ -18,7 +18,29 @@ const Tuition: React.FC = () => {
         <div className="max-w-5xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-serif text-slate-800 mb-8 text-center">2026-2027 School Year Tuition</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Infant Program */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
+              <h3 className="text-2xl font-serif text-sage mb-2">Infant Program</h3>
+              <p className="text-slate-500 mb-6">Ages 6 Months - 18 Months</p>
+              
+              <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
+                  <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
+                  <span>Hours: 8:15 AM - 5:15 PM</span>
+                </div>
+                
+                <a
+                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
+                  download
+                  className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
+                >
+                  <Download size={18} />
+                  Download Rates
+                </a>
+              </div>
+            </div>
+
             {/* Toddler Program */}
             <div className="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
               <h3 className="text-2xl font-serif text-sage mb-2">Toddler Program</h3>
@@ -27,11 +49,11 @@ const Tuition: React.FC = () => {
               <div className="mt-6">
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:15 AM - 3:45 PM</span>
+                  <span>Hours: 8:15 AM - 5:15 PM</span>
                 </div>
                 
                 <a
-                  href="/MSE-Tuition.pdf"
+                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -49,11 +71,11 @@ const Tuition: React.FC = () => {
               <div className="mt-6">
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:15 AM - 3:45 PM</span>
+                  <span>Hours: 8:15 AM - 5:15 PM</span>
                 </div>
                 
                 <a
-                  href="/MSE-Tuition.pdf"
+                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -125,8 +147,8 @@ const Tuition: React.FC = () => {
               <p>Tuition is paid monthly via ACH or Credit Card on the 1st of each month. Tuition guarantees your child's spot, so it is not based on attendance.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-slate-100">
-              <h4 className="font-semibold text-slate-800 mb-2">Discount</h4>
-              <p>Families with multiple children enrolled receive a 10% discount on the lesser tuition for the second child. We honor 10% United States Active Military/Veteran discount. Only one discount applicable per family.</p>
+              <h4 className="font-bold text-slate-800 mb-2 text-2xl">Discounts</h4>
+              <p>Families with multiple children enrolled receive a 5% discount on the lesser tuition for the second child. We honor 10% United States Active Military/Veteran discount. Only one discount applicable per family.</p>
             </div>
           </div>
         </div>

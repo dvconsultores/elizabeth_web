@@ -120,6 +120,23 @@ const Career: React.FC = () => {
               When you join our schools, you're not simply accepting a position—you're becoming part of a community that believes in helping one another grow, professionally and personally.
             </p>
           </div>
+
+           {/* Call to Action */}
+            <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20">
+              <p className="text-slate-800 text-lg leading-relaxed mb-6">
+                We are committed to investing in our team and prioritize internal growth and promotion whenever possible.<br />
+                <span className="font-semibold">We welcome educators who are grounded in their presence and committed to growth.</span>
+              </p>
+              <p className="text-slate-700 text-sm mb-6 italic">
+                If you are interested in opportunities beyond this role, we welcome you to inquire about other available positions within our school community.
+              </p>
+              <a
+                href="mailto:astrid@montessorielizabeth.com?subject=Assistant Lead Teacher Application"
+                className="inline-block bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
+              >
+                Apply Today
+              </a>
+            </div>
         </div>
       </div>
     </div>

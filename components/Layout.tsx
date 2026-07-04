@@ -7,14 +7,20 @@ import { RoutePath } from '../types';
 const navItems = [
   { label: 'Home', path: RoutePath.HOME },
   { label: 'About Us', path: RoutePath.ABOUT },
-  { label: 'Programs', path: RoutePath.PROGRAMS, hasDropdown: true },
+  { label: 'Programs', path: RoutePath.PROGRAMS, hasDropdown: true, dropdownKey: 'programs' },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
-  { label: 'Community', path: RoutePath.COMMUNITY },
+  { label: 'Community', path: RoutePath.COMMUNITY, hasDropdown: true, dropdownKey: 'community' },
   { label: 'Contact Us', path: RoutePath.CONTACT },
   { label: 'Careers', path: RoutePath.CAREER },
 ];
 
-const programsDropdownItems = [
+type DropdownItem = {
+  label: string;
+  path: string;
+  isDownload?: boolean;
+};
+
+const programsDropdownItems: DropdownItem[] = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Tuition', path: RoutePath.TUITION },
   { label: 'Calendar', path: '/MSE-2026-2027-School-Year-Calendar.pdf', isDownload: true },
@@ -22,12 +28,26 @@ const programsDropdownItems = [
   { label: 'UPK', path: RoutePath.TUITION + '#upk' },
 ];
 
+const communityDropdownItems: DropdownItem[] = [
+  { label: 'Community', path: RoutePath.COMMUNITY },
+  { label: 'Events', path: RoutePath.EVENTS },
+];
+
+const getDropdownItems = (key: string): DropdownItem[] => {
+  switch (key) {
+    case 'programs': return programsDropdownItems;
+    case 'community': return communityDropdownItems;
+    default: return [];
+  }
+};
+
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
+  const programsDropdownRef = useRef<HTMLDivElement>(null);
+  const communityDropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const isHomePage = location.pathname === '/' || location.pathname === RoutePath.HOME;
 
@@ -39,8 +59,11 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setDropdownOpen(false);
+      const target = event.target as Node;
+      const programsClicked = programsDropdownRef.current?.contains(target);
+      const communityClicked = communityDropdownRef.current?.contains(target);
+      if (!programsClicked && !communityClicked) {
+        setActiveDropdown(null);
       }
     };
 
@@ -63,9 +86,13 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-8 items-center">
           {navItems.map((item) => (
             item.hasDropdown ? (
-              <div key={item.path} className="relative" ref={dropdownRef}>
+              <div
+                key={item.path}
+                className="relative"
+                ref={item.dropdownKey === 'programs' ? programsDropdownRef : communityDropdownRef}
+              >
                 <button
-                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  onClick={() => setActiveDropdown(activeDropdown === item.dropdownKey ? null : item.dropdownKey!)}
                   className={`text-sm transition-colors flex items-center gap-1 ${
                     (isHomePage && !scrolled && !isOpen)
                       ? location.pathname === item.path
@@ -77,18 +104,18 @@ export const Navbar: React.FC = () => {
                   }`}
                 >
                   {item.label}
-                  <ChevronDown size={16} className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown size={16} className={`transition-transform ${activeDropdown === item.dropdownKey ? 'rotate-180' : ''}`} />
                 </button>
-                {dropdownOpen && (
+                {activeDropdown === item.dropdownKey && (
                   <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-xl border border-slate-100 py-2 min-w-[180px] z-50">
-                    {programsDropdownItems.map((dropItem) => (
+                    {getDropdownItems(item.dropdownKey!).map((dropItem) => (
                       dropItem.isDownload ? (
                         <a
                           key={dropItem.path}
                           href={dropItem.path}
                           download
                           className="block px-4 py-2 text-sm text-slate-600 hover:bg-sage/10 hover:text-sage transition-colors"
-                          onClick={() => setDropdownOpen(false)}
+                          onClick={() => setActiveDropdown(null)}
                         >
                           {dropItem.label}
                         </a>
@@ -97,7 +124,7 @@ export const Navbar: React.FC = () => {
                           key={dropItem.path}
                           to={dropItem.path}
                           className="block px-4 py-2 text-sm text-slate-600 hover:bg-sage/10 hover:text-sage transition-colors"
-                          onClick={() => setDropdownOpen(false)}
+                          onClick={() => setActiveDropdown(null)}
                         >
                           {dropItem.label}
                         </Link>
@@ -147,15 +174,15 @@ export const Navbar: React.FC = () => {
             item.hasDropdown ? (
               <div key={item.path}>
                 <button
-                  onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                  onClick={() => setActiveMobileDropdown(activeMobileDropdown === item.dropdownKey ? null : item.dropdownKey!)}
                   className="text-lg font-serif border-b border-slate-100 pb-2 w-full text-left flex items-center justify-between"
                 >
                   {item.label}
-                  <ChevronDown size={20} className={`transition-transform ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown size={20} className={`transition-transform ${activeMobileDropdown === item.dropdownKey ? 'rotate-180' : ''}`} />
                 </button>
-                {mobileDropdownOpen && (
+                {activeMobileDropdown === item.dropdownKey && (
                   <div className="pl-4 mt-2 space-y-2">
-                    {programsDropdownItems.map((dropItem) => (
+                    {getDropdownItems(item.dropdownKey!).map((dropItem) => (
                       dropItem.isDownload ? (
                         <a
                           key={dropItem.path}
@@ -164,7 +191,7 @@ export const Navbar: React.FC = () => {
                           className="block py-2 text-slate-600 text-base"
                           onClick={() => {
                             setIsOpen(false);
-                            setMobileDropdownOpen(false);
+                            setActiveMobileDropdown(null);
                           }}
                         >
                           {dropItem.label}
@@ -176,7 +203,7 @@ export const Navbar: React.FC = () => {
                           className="block py-2 text-slate-600 text-base"
                           onClick={() => {
                             setIsOpen(false);
-                            setMobileDropdownOpen(false);
+                            setActiveMobileDropdown(null);
                           }}
                         >
                           {dropItem.label}

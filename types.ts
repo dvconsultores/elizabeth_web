@@ -20,6 +20,7 @@ export enum RoutePath {
   TUITION = '/tuition',
   PHILOSOPHY = '/filosofia',
   COMMUNITY = '/comunidad',
+  EVENTS = '/events',
   CAREER = '/career',
   CONTACT = '/contacto'
 }

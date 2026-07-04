@@ -31,6 +31,7 @@ const programsDropdownItems: DropdownItem[] = [
 const communityDropdownItems: DropdownItem[] = [
   { label: 'Community', path: RoutePath.COMMUNITY },
   { label: 'Events', path: RoutePath.EVENTS },
+  { label: 'Family Resources', path: RoutePath.FAMILY_RESOURCES },
 ];
 
 const aboutDropdownItems: DropdownItem[] = [

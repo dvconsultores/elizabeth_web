@@ -18,6 +18,8 @@ const programsDropdownItems = [
   { label: 'Programs', path: RoutePath.PROGRAMS },
   { label: 'Tuition', path: RoutePath.TUITION },
   { label: 'Calendar', path: '/MSE-2026-2027-School-Year-Calendar.pdf', isDownload: true },
+  { label: 'CCCAP', path: RoutePath.TUITION + '#cccapp' },
+  { label: 'UPK', path: RoutePath.TUITION + '#upk' },
 ];
 
 export const Navbar: React.FC = () => {

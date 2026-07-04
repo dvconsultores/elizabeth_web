@@ -1,8 +1,23 @@
 
-import React from 'react';
-import { Check, Calendar, Clock, Download } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Check, Calendar, Clock, Download, ExternalLink } from 'lucide-react';
 
 const Tuition: React.FC = () => {
+  const location = useLocation();
+  const [activeProgramTab, setActiveProgramTab] = useState<'CCCAP' | 'UPK'>('CCCAP');
+
+  useEffect(() => {
+    const hash = location.hash.replace('#', '');
+    if (hash.toLowerCase() === 'upk') setActiveProgramTab('UPK');
+    else if (hash.toLowerCase() === 'cccapp') setActiveProgramTab('CCCAP');
+    // Scroll to programs section
+    if (hash === 'cccapp' || hash === 'upk') {
+      setTimeout(() => {
+        document.getElementById('program-tabs')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }, [location.hash]);
   return (
     <div className="pt-40 pb-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -31,7 +46,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
+                  href="/2026_MSE_Tuition_Updated_July_2026.png"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -53,7 +68,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
+                  href="/2026_MSE_Tuition_Updated_July_2026.png"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -75,7 +90,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026 MSE Infant, Toddler and Primary Program Tuition.pdf"
+                  href="/2026_MSE_Tuition_Updated_July_2026.png"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -101,6 +116,92 @@ const Tuition: React.FC = () => {
               Download Calendar
             </a>
           </div>
+        </div>
+
+        {/* Programs */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-2xl font-serif text-slate-800 mb-6 text-center">Programs</h3>
+          
+          {/* Tab Buttons */}
+          <div id="program-tabs" className="flex justify-center gap-4 mb-8 scroll-mt-32">
+            <button
+              onClick={() => setActiveProgramTab('CCCAP')}
+              className={`px-8 py-3 rounded-full font-medium transition-all ${
+                activeProgramTab === 'CCCAP'
+                  ? 'bg-sage text-white shadow-lg shadow-sage/30'
+                  : 'bg-white text-slate-600 border border-slate-200 hover:border-sage'
+              }`}
+            >
+              CCCAP
+            </button>
+            <button
+              onClick={() => setActiveProgramTab('UPK')}
+              className={`px-8 py-3 rounded-full font-medium transition-all ${
+                activeProgramTab === 'UPK'
+                  ? 'bg-sage text-white shadow-lg shadow-sage/30'
+                  : 'bg-white text-slate-600 border border-slate-200 hover:border-sage'
+              }`}
+            >
+              UPK
+            </button>
+          </div>
+
+          {/* CCCAP Content */}
+          {activeProgramTab === 'CCCAP' && (
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100">
+              <h4 className="text-2xl font-serif text-sage mb-4">CCCAP</h4>
+              <p className="text-slate-700 mb-4 leading-relaxed">
+                The Colorado Child Care Assistance Program (CCCAP) helps eligible families afford
+                quality childcare while parents work, attend school, participate in
+                training programs, or search for employment. Through CCCAP, families
+                may receive financial assistance to help cover a portion of their
+                childcare tuition costs.
+              </p>
+              <p className="text-slate-700 mb-6 leading-relaxed">
+                As a participating CCCAP provider, we proudly partner with families to
+                ensure children have access to a safe, nurturing, and enriching early
+                learning environment. Eligibility and benefits are determined through
+                your local county human services department.
+              </p>
+              <a
+                href="https://www.coloradoofficeofearlychildhood.com/OEC_Families?lang=en&p=Family&s=Colorado-Child-Care-Assistance-Program"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sage font-medium hover:underline"
+              >
+                <ExternalLink size={18} />
+                Learn more about CCCAP and eligibility requirements
+              </a>
+            </div>
+          )}
+
+          {/* UPK Content */}
+          {activeProgramTab === 'UPK' && (
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100">
+              <h4 className="text-2xl font-serif text-sage mb-4">UPK</h4>
+              <p className="text-slate-700 mb-4 leading-relaxed">
+                Colorado Universal Preschool (UPK) provides tuition support for preschool-aged
+                children in the year before kindergarten. Eligible children may
+                receive 15 hours per week of state-funded preschool, with some
+                families qualifying for additional support based on specific factors.
+              </p>
+              <p className="text-slate-700 mb-6 leading-relaxed">
+                As a participating UPK Colorado provider, we are committed to delivering
+                high-quality early childhood education that supports kindergarten
+                readiness through engaging, developmentally appropriate learning
+                experiences.
+              </p>
+              <a
+                href="https://upk.colorado.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sage font-medium hover:underline"
+              >
+                <ExternalLink size={18} />
+                Learn more about Colorado Universal Preschool and enrollment
+              </a>
+            </div>
+          )}
         </div>
 
         {/* What's Included */}

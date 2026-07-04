@@ -40,9 +40,13 @@ const Tuition: React.FC = () => {
               <p className="text-slate-500 mb-6">Ages 6 Months - 18 Months</p>
               
               <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-3">
+                  <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
+                  <span>Before School 7:00 AM - 8:15 AM</span>
+                </div>
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:15 AM - 5:15 PM</span>
+                  <span>Hours: 7:00 AM - 5:15 PM</span>
                 </div>
                 
                 <a
@@ -62,9 +66,13 @@ const Tuition: React.FC = () => {
               <p className="text-slate-500 mb-6">Ages 1-3</p>
               
               <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-3">
+                  <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
+                  <span>Before School 7:00 AM - 8:15 AM</span>
+                </div>
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:15 AM - 5:15 PM</span>
+                  <span>Hours: 7:00 AM - 5:15 PM</span>
                 </div>
                 
                 <a
@@ -84,9 +92,13 @@ const Tuition: React.FC = () => {
               <p className="text-slate-500 mb-6">Ages 2½-5</p>
               
               <div className="mt-6">
+                <div className="flex items-start gap-3 text-sm text-slate-600 mb-3">
+                  <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
+                  <span>Before School 7:00 AM - 8:15 AM</span>
+                </div>
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-6">
                   <Clock size={18} className="text-sage flex-shrink-0 mt-0.5" />
-                  <span>Hours: 8:15 AM - 5:15 PM</span>
+                  <span>Hours: 7:00 AM - 5:15 PM</span>
                 </div>
                 
                 <a
@@ -120,7 +132,7 @@ const Tuition: React.FC = () => {
 
         {/* Programs */}
         <div className="max-w-4xl mx-auto mb-16">
-          <h3 className="text-2xl font-serif text-slate-800 mb-6 text-center">Programs</h3>
+          <h3 className="text-2xl font-serif text-slate-800 mb-6 text-center">Colorado State Funded Programs</h3>
           
           {/* Tab Buttons */}
           <div id="program-tabs" className="flex justify-center gap-4 mb-8 scroll-mt-32">

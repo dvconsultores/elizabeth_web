@@ -101,7 +101,7 @@ const FamilyResources: React.FC = () => {
               Every child develops at their own pace and follows his/her own curriculum. However, if concerns arise, early support can make a meaningful difference. Our schools regularly collaborate with outside professionals to help children receive services within the classroom whenever appropriate.
             </p>
             <a
-              href="#"
+              href="/Therapist Directory.png"
               download
               className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform mb-6"
             >

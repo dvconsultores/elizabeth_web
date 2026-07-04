@@ -160,14 +160,6 @@ export const Navbar: React.FC = () => {
               </Link>
             )
           ))}
-          <a
-            href="https://app.waitlistplus.com/MontessoriSchoolofEl/Portal/Signup"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-sage text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md shadow-sage/20"
-          >
-            Waitlist
-          </a>
         </div>
 
         {/* Mobile Toggle */}

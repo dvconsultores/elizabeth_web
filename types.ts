@@ -15,14 +15,14 @@ export interface Program {
 
 export enum RoutePath {
   HOME = '/',
-  ABOUT = '/nosotros',
-  PROGRAMS = '/programas',
+  ABOUT = '/about',
+  PROGRAMS = '/programs',
   TUITION = '/tuition',
-  PHILOSOPHY = '/filosofia',
-  COMMUNITY = '/comunidad',
+  PHILOSOPHY = '/philosophy',
+  COMMUNITY = '/community',
   EVENTS = '/events',
   CURRICULUM = '/curriculum',
   FAMILY_RESOURCES = '/family-resources',
   CAREER = '/career',
-  CONTACT = '/contacto'
+  CONTACT = '/contact'
 }

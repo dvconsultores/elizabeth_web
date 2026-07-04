@@ -16,7 +16,7 @@ const Career: React.FC = () => {
           {/* Intro */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100 mb-12">
             <p className="text-slate-700 leading-relaxed mb-4">
-              At Montessori School of Castle Rock and Montessori School of Elizabeth, we believe the quality of a school begins with the people who walk through its doors each morning. That's why we're committed to building a workplace where educators feel valued, supported, and inspired to do their very best.
+              At Montessori School of of Elizabeth, we believe the quality of a school begins with the people who walk through its doors each morning. That's why we're committed to building a workplace where educators feel valued, supported, and inspired to do their very best.
             </p>
             <p className="text-slate-700 leading-relaxed mb-4">
               Families choose our schools because of the exceptional care, meaningful relationships, and high-quality education our team provides every day. Our strong reputation in the communities we serve has made us a trusted choice for families seeking an outstanding early childhood experience and a nurturing place for their children to learn and grow.
@@ -111,7 +111,7 @@ const Career: React.FC = () => {
           </div>
 
           {/* Growing Together */}
-          <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20 mb-12">
+          {/* <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20 mb-12">
             <h2 className="text-2xl font-serif text-slate-800 mb-4">Growing Together</h2>
             <p className="text-slate-700 leading-relaxed mb-6">
               At Montessori School of Castle Rock and Montessori School of Elizabeth, we believe our people are our greatest strength. We are committed to investing in our team through mentorship, ongoing education, leadership development, and opportunities for internal advancement.
@@ -119,7 +119,7 @@ const Career: React.FC = () => {
             <p className="text-slate-700 leading-relaxed">
               When you join our schools, you're not simply accepting a position—you're becoming part of a community that believes in helping one another grow, professionally and personally.
             </p>
-          </div>
+          </div> */}
 
            {/* Call to Action */}
             <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20">

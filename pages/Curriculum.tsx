@@ -15,7 +15,7 @@ const Curriculum: React.FC = () => {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100 mb-12">
             <h2 className="text-2xl font-serif text-slate-800 mb-6">Introduction</h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              At Montessori School of Castle Rock, learning doesn&rsquo;t happen by chance&mdash;it happens with intention.
+              At Montessori School of Elizabeth, learning doesn&rsquo;t happen by chance&mdash;it happens with intention.
             </p>
             <p className="text-slate-700 leading-relaxed mb-4">
               Our Intentional Foundations&trade; Curriculum is a comprehensive, research-informed educational framework thoughtfully designed by our leadership team to nurture the whole child. Inspired by Montessori principles, developmental science, Colorado Early Learning &amp; Development Guidelines, and best practices in early childhood education, our curriculum provides children with meaningful experiences that foster confidence, curiosity, independence, and a lifelong love of learning.

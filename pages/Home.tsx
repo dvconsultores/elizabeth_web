@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { title: 'Infant Program', age: '6 Months to 18 Months', img: '/infant.jpeg', desc: 'Gentle Beginnings. A calm, nurturing environment where your baby feels safe, seen, and deeply cared for.' },
+              { title: 'Infant Program', age: '6 Weeks to 18 Months', img: '/infant.jpeg', desc: 'Gentle Beginnings. A calm, nurturing environment where your baby feels safe, seen, and deeply cared for.' },
               { title: 'Our Toddlers', age: '1 to 3 years', img: '/1676198911.jpeg', desc: 'Motor development, language, and initial socialization.' },
               { title: "Our Preschoolers", age: '2½ to 5 years', img: '/2217433607.jpeg', desc: 'Sensorial exploration, mathematics, practical life, and culture.' }
             ].map((program, idx) => (

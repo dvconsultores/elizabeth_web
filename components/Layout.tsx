@@ -270,7 +270,7 @@ export const Footer: React.FC = () => {
             <li className="flex items-start gap-3"><MapPin size={18} className="text-sage" /> <span>635 Beverly Street, Elizabeth, Colorado 80107</span></li>
             <li className="flex items-center gap-3"><Phone size={18} className="text-sage" /> <span>+1 (719)-744-3692</span></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-sage" /> <span>admissions@montessorielizabeth.com</span></li>
-            <li className="flex items-center gap-3"><Clock size={18} className="text-sage" /> <span>School Hours: 8:15 AM - 5:15 PM</span></li>
+            <li className="flex items-center gap-3"><Clock size={18} className="text-sage" /> <span>School Hours: 7:00 AM - 5:15 PM</span></li>
           </ul>
         </div>
       </div>

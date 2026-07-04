@@ -7,7 +7,7 @@ const Programs: React.FC = () => {
     {
       title: "Infant Program",
       subtitle: "Gentle Beginnings",
-      age: "Ages: 6 Months - 18 Months old",
+      age: "Ages: 6 Weeks - 18 Months old",
       description: "Our Infant Program is designed to provide a calm, nurturing environment where your baby feels safe, seen, and deeply cared for. During these earliest months, every interaction matters—and we approach each moment with intention, respect, and warmth.",
       content: [
         "We believe that even the youngest children are capable, aware, and worthy of meaningful connection. Our role is to support their development with gentle guidance, consistent care, and a thoughtfully prepared environment."

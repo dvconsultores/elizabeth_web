@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sparkles, Heart, Users, TrendingUp, CheckCircle } from 'lucide-react';
+import { CheckCircle, Leaf } from 'lucide-react';
 
 const Career: React.FC = () => {
   return (
@@ -8,216 +8,117 @@ const Career: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sage font-medium uppercase tracking-widest text-xs mb-4 block">Join Our Team</span>
-          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Career Opportunities</h1>
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            At Montessori School of Elizabeth, we believe early childhood is sacred.
-          </p>
+          <h1 className="text-5xl md:text-7xl font-serif text-slate-800 mb-6">Join a Team That's Making a Difference</h1>
+          <p className="text-sage font-serif italic text-xl">More Than a Job—A Place to Grow, Lead, and Inspire</p>
         </div>
 
-        {/* Job Posting */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
+          {/* Intro */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100 mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <Sparkles className="text-sage" size={32} />
-              <h2 className="text-3xl md:text-4xl font-serif text-slate-800">Assistant Lead Teacher</h2>
-            </div>
-            
-            <div className="mb-8">
-              <p className="text-slate-700 text-lg leading-relaxed mb-4">
-                We are building intentional foundations for little hearts and confident futures for big dreams—and we're looking for someone who feels called to be part of that work.
-              </p>
-              <p className="text-slate-700 text-lg leading-relaxed font-semibold">
-                This is more than a classroom position. It is an opportunity to guide and shape children during the most formative years of their development.
-              </p>
-            </div>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              At Montessori School of Castle Rock and Montessori School of Elizabeth, we believe the quality of a school begins with the people who walk through its doors each morning. That's why we're committed to building a workplace where educators feel valued, supported, and inspired to do their very best.
+            </p>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              Families choose our schools because of the exceptional care, meaningful relationships, and high-quality education our team provides every day. Our strong reputation in the communities we serve has made us a trusted choice for families seeking an outstanding early childhood experience and a nurturing place for their children to learn and grow.
+            </p>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              We are equally committed to creating an exceptional place to work. From supportive leadership and professional development to opportunities for advancement, we invest in our team because we know that when educators thrive, children thrive.
+            </p>
+            <p className="text-slate-700 leading-relaxed font-medium">
+              If you're looking for a career where your work has purpose, your ideas are valued, and your growth matters, we'd love to meet you.
+            </p>
+          </div>
 
-            {/* What You'll Do */}
-            <div className="mb-10">
-              <div className="flex items-center gap-3 mb-6">
-                <Sparkles className="text-sage" size={24} />
-                <h3 className="text-2xl font-serif text-slate-800">What You'll Do</h3>
-              </div>
-              <p className="text-slate-700 mb-4">As an Assistant Lead Teacher, you will:</p>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Support children ages 6 weeks through 5 years within a calm, Montessori-inspired environment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Help prepare intentional, thoughtfully designed classroom spaces guided by children's interests</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Lead children through their day with patience, warmth, and consistency</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Confidently support classroom leadership and manage within ratio when the Lead Teacher is absent</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Foster independence, social-emotional growth, language development, and fine and gross motor skills</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Maintain a clean, organized, and beautiful environment, including diapering, snack preparation, and daily sanitizing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Build respectful, professional partnerships with families</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Collaborate closely with your team to create a supportive, aligned classroom culture</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Continue your professional growth through ongoing development and licensing requirements</span>
-                </li>
+          {/* Why Educators Choose Us */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-slate-800 mb-8 text-center">Why Educators Choose Us</h2>
+            <div className="bg-soft-cream rounded-3xl p-8 md:p-12">
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  'Trusted by families throughout our communities',
+                  'Lower teacher-to-child ratios than state requirements',
+                  'Supportive leadership that values your voice',
+                  'Meaningful opportunities for professional growth',
+                  'Beautiful Montessori-inspired learning environments',
+                  'Internal promotion and leadership development whenever possible',
+                  'A collaborative team that believes every child—and every educator—deserves to thrive',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-slate-700">
+                    <CheckCircle className="text-sage flex-shrink-0 mt-0.5" size={20} />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
-              <p className="text-slate-700 italic mt-6">
-                You will be supported by experienced educators who are deeply invested in your growth and success.
-              </p>
             </div>
+          </div>
 
-            {/* The Ideal Candidate */}
-            <div className="mb-10">
-              <div className="flex items-center gap-3 mb-6">
-                <Heart className="text-sage" size={24} />
-                <h3 className="text-2xl font-serif text-slate-800">The Ideal Candidate</h3>
-              </div>
-              <p className="text-slate-700 mb-4">You may be a great fit if you:</p>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are patient, dependable, and genuinely nurturing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>View early childhood education as meaningful, purposeful work</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Take initiative and demonstrate curiosity about child development</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Adapt with grace and flexibility as each day unfolds</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Thrive in a collaborative, team-centered environment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Communicate professionally and thoughtfully with both families and colleagues</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are qualified—or willing to become qualified—through Colorado Shines Level 2</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Have experience in a preschool or elementary setting (preferred)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Are committed to continual growth and refining your craft</span>
-                </li>
-              </ul>
-              <p className="text-slate-700 italic mt-6">
-                We value educators who are grounded in their presence and committed to growth.
-              </p>
-            </div>
+          {/* Employee Benefits */}
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-100 mb-12">
+            <h2 className="text-2xl font-serif text-slate-800 mb-6">Employee Benefits</h2>
+            <p className="text-slate-700 leading-relaxed mb-8">
+              We believe that exceptional educators deserve exceptional support. That's why we've designed a benefits package that rewards dedication, encourages professional growth, and promotes a healthy work-life balance.
+            </p>
 
-            {/* Why Join Us */}
-            <div className="mb-10">
-              <div className="flex items-center gap-3 mb-6">
-                <Users className="text-sage" size={24} />
-                <h3 className="text-2xl font-serif text-slate-800">Why Join Us?</h3>
-              </div>
-              <p className="text-slate-700 mb-4">
-                We are a small, woman-owned school rooted in the belief that teachers deserve to feel respected, supported, and valued in their work.
-              </p>
-              <p className="text-slate-700 mb-4">
-                We prioritize mental well-being, professional growth, and a sustainable work-life balance—because when our team feels supported, our children thrive.
-              </p>
-              <p className="text-slate-700 font-semibold mb-4">What we offer:</p>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>20+ paid, predetermined PTO days after 90 days</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Comprehensive PTO Structure: During your first 12 months of employment, PTO is accrued at a rate of 1 hour for every 30 hours worked. After one year of employment, 10 PTO days are granted annually at the start of the year (frontloaded rather than accrued)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid snow days aligned with local district and county closures</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Paid professional development pathways and certifications after one year</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>401k Plan</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>A collaborative, uplifting team environment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="text-sage flex-shrink-0 mt-1" size={20} />
-                  <span>Leadership that listens, values your voice, and supports your growth</span>
-                </li>
-              </ul>
-              <p className="text-slate-700 font-semibold mt-6">
-                We are committed to investing in our team and prioritize internal growth and promotion whenever possible.
-              </p>
-            </div>
-
-            {/* Compensation */}
-            <div className="mb-10">
-              <div className="flex items-center gap-3 mb-6">
-                <TrendingUp className="text-sage" size={24} />
-                <h3 className="text-2xl font-serif text-slate-800">Compensation & Schedule</h3>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-soft-cream p-6 rounded-2xl">
-                  <p className="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Pay Range</p>
-                  <p className="text-2xl font-serif text-slate-800">$17.75–$20.00/hour</p>
-                  <p className="text-sm text-slate-500 mt-1">Based on experience & qualifications</p>
+            <h3 className="text-xl font-serif text-sage mb-6">Benefits Include</h3>
+            <ul className="space-y-4 text-slate-700">
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>20+ Paid Predetermined Days Off</strong> after your first 90 days of employment, allowing you to enjoy school holidays alongside your family.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <div>
+                  <strong>Comprehensive Paid Time Off (PTO) Program</strong>
+                  <ul className="mt-2 space-y-1 text-sm text-slate-600 pl-5 list-disc">
+                    <li>During your first 12 months of employment, PTO is accrued at a rate of 1 hour for every 30 hours worked.</li>
+                    <li>After one year of employment, PTO is front-loaded quarterly, providing greater flexibility and predictability throughout the year.</li>
+                  </ul>
                 </div>
-                <div className="bg-soft-cream p-6 rounded-2xl">
-                  <p className="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Schedule</p>
-                  <p className="text-2xl font-serif text-slate-800">Monday–Friday</p>
-                </div>
-                <div className="bg-soft-cream p-6 rounded-2xl">
-                  <p className="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">Shift</p>
-                  <p className="text-2xl font-serif text-slate-800">8:00 AM – 5:30 PM</p>
-                </div>
-              </div>
-            </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Paid Snow Days</strong> aligned with local school district and county closures.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Paid Professional Development</strong> opportunities, including certifications and career advancement pathways after one year of employment.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>401(k) Retirement Plan</strong> to help you invest in your future.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Lower Teacher-to-Child Ratios</strong> than state requirements, allowing you to focus on meaningful interactions and individualized learning.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Career Advancement Opportunities</strong>, with a strong commitment to promoting from within whenever possible.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>A Collaborative, Uplifting Team Environment</strong> where teamwork, encouragement, and mutual respect are part of our everyday culture.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Supportive Leadership</strong> that listens, values your ideas, and is genuinely invested in your professional success.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Leaf className="text-sage flex-shrink-0 mt-1" size={18} />
+                <span><strong>Beautiful Montessori-Inspired Learning Environments</strong> designed to support both children and educators.</span>
+              </li>
+            </ul>
+          </div>
 
-            {/* Call to Action */}
-            <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20">
-              <p className="text-slate-800 text-lg leading-relaxed mb-6">
-                We are committed to investing in our team and prioritize internal growth and promotion whenever possible.<br />
-                <span className="font-semibold">We welcome educators who are grounded in their presence and committed to growth.</span>
-              </p>
-              <p className="text-slate-700 text-sm mb-6 italic">
-                If you are interested in opportunities beyond this role, we welcome you to inquire about other available positions within our school community.
-              </p>
-              <a
-                href="mailto:astrid@montessorielizabeth.com?subject=Assistant Lead Teacher Application"
-                className="inline-block bg-sage text-white px-10 py-5 rounded-full font-medium shadow-xl shadow-sage/30 hover:scale-105 transition-transform"
-              >
-                Apply Today
-              </a>
-            </div>
+          {/* Growing Together */}
+          <div className="bg-sage/10 rounded-2xl p-8 text-center border border-sage/20 mb-12">
+            <h2 className="text-2xl font-serif text-slate-800 mb-4">Growing Together</h2>
+            <p className="text-slate-700 leading-relaxed mb-6">
+              At Montessori School of Castle Rock and Montessori School of Elizabeth, we believe our people are our greatest strength. We are committed to investing in our team through mentorship, ongoing education, leadership development, and opportunities for internal advancement.
+            </p>
+            <p className="text-slate-700 leading-relaxed">
+              When you join our schools, you're not simply accepting a position—you're becoming part of a community that believes in helping one another grow, professionally and personally.
+            </p>
           </div>
         </div>
       </div>

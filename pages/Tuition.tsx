@@ -37,7 +37,7 @@ const Tuition: React.FC = () => {
             {/* Infant Program */}
             <div className="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
               <h3 className="text-2xl font-serif text-sage mb-2">Infant Program</h3>
-              <p className="text-slate-500 mb-6">Ages 6 Months - 18 Months</p>
+              <p className="text-slate-500 mb-6">Ages 6 Weeks - 18 Months</p>
               
               <div className="mt-6">
                 <div className="flex items-start gap-3 text-sm text-slate-600 mb-3">

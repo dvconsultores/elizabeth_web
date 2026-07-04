@@ -9,6 +9,7 @@ import Tuition from './pages/Tuition';
 import Philosophy from './pages/Philosophy';
 import Community from './pages/Community';
 import Events from './pages/Events';
+import Curriculum from './pages/Curriculum';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
 import { RoutePath } from './types';
@@ -35,6 +36,7 @@ const App: React.FC = () => {
           <Route path={RoutePath.PHILOSOPHY} element={<Philosophy />} />
           <Route path={RoutePath.COMMUNITY} element={<Community />} />
           <Route path={RoutePath.EVENTS} element={<Events />} />
+          <Route path={RoutePath.CURRICULUM} element={<Curriculum />} />
           <Route path={RoutePath.CAREER} element={<Career />} />
           <Route path={RoutePath.CONTACT} element={<Contact />} />
           {/* Fallback */}

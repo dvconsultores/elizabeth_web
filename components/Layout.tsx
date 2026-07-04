@@ -6,7 +6,7 @@ import { RoutePath } from '../types';
 
 const navItems = [
   { label: 'Home', path: RoutePath.HOME },
-  { label: 'About Us', path: RoutePath.ABOUT },
+  { label: 'About Us', path: RoutePath.ABOUT, hasDropdown: true, dropdownKey: 'about' },
   { label: 'Programs', path: RoutePath.PROGRAMS, hasDropdown: true, dropdownKey: 'programs' },
   { label: 'Philosophy', path: RoutePath.PHILOSOPHY },
   { label: 'Community', path: RoutePath.COMMUNITY, hasDropdown: true, dropdownKey: 'community' },
@@ -33,10 +33,16 @@ const communityDropdownItems: DropdownItem[] = [
   { label: 'Events', path: RoutePath.EVENTS },
 ];
 
+const aboutDropdownItems: DropdownItem[] = [
+  { label: 'About Us', path: RoutePath.ABOUT },
+  { label: 'Our Curriculum', path: RoutePath.CURRICULUM },
+];
+
 const getDropdownItems = (key: string): DropdownItem[] => {
   switch (key) {
     case 'programs': return programsDropdownItems;
     case 'community': return communityDropdownItems;
+    case 'about': return aboutDropdownItems;
     default: return [];
   }
 };
@@ -48,6 +54,7 @@ export const Navbar: React.FC = () => {
   const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
   const programsDropdownRef = useRef<HTMLDivElement>(null);
   const communityDropdownRef = useRef<HTMLDivElement>(null);
+  const aboutDropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const isHomePage = location.pathname === '/' || location.pathname === RoutePath.HOME;
 
@@ -62,7 +69,8 @@ export const Navbar: React.FC = () => {
       const target = event.target as Node;
       const programsClicked = programsDropdownRef.current?.contains(target);
       const communityClicked = communityDropdownRef.current?.contains(target);
-      if (!programsClicked && !communityClicked) {
+      const aboutClicked = aboutDropdownRef.current?.contains(target);
+      if (!programsClicked && !communityClicked && !aboutClicked) {
         setActiveDropdown(null);
       }
     };
@@ -89,7 +97,7 @@ export const Navbar: React.FC = () => {
               <div
                 key={item.path}
                 className="relative"
-                ref={item.dropdownKey === 'programs' ? programsDropdownRef : communityDropdownRef}
+                ref={item.dropdownKey === 'programs' ? programsDropdownRef : item.dropdownKey === 'community' ? communityDropdownRef : aboutDropdownRef}
               >
                 <button
                   onClick={() => setActiveDropdown(activeDropdown === item.dropdownKey ? null : item.dropdownKey!)}

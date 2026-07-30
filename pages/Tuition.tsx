@@ -50,7 +50,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026_MSE_Tuition_Updated_July_2026.png"
+                  href="/MSCR-2026-Infant-Toddler-and-Primary-Pricing.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -76,7 +76,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026_MSE_Tuition_Updated_July_2026.png"
+                  href="/MSCR-2026-Infant-Toddler-and-Primary-Pricing.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
@@ -102,7 +102,7 @@ const Tuition: React.FC = () => {
                 </div>
                 
                 <a
-                  href="/2026_MSE_Tuition_Updated_July_2026.png"
+                  href="/MSCR-2026-Infant-Toddler-and-Primary-Pricing.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-sage text-white px-6 py-3 rounded-full font-medium shadow-lg shadow-sage/30 hover:scale-105 active:scale-100 transition-transform w-full justify-center"
                 >
